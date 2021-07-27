@@ -45,7 +45,7 @@ header{
 }
 nav{
     width: 100%;
-    height: 8rem;
+    height: 9.5rem;
     display: flex;
     align-items: flex-end;
 }
@@ -180,21 +180,230 @@ ion-icon{
     }
 }
 /*hero*/
-.hero{
-    width: 100%;
-    height: 100vh;
-    .text{
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        .text h1{
-            font-size: 8rem;
-            margin: 2rem 0; 
 
-        }
+
+.parallax{
+    height: 73.5vh;
+    width: auto;
+    color: $col;
+    font-size: 4rem;
+    line-height: 3rem;
+    background-image:url(http://localhost:8000/../img/estate-header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white{
+    width: 100%;
+    height: 40vh; 
+    position: relative;
+}
+.parallax2{
+    margin-bottom: 20rem;
+    height: 70vh;
+    width: 100%;
+    color: $col;
+    font-size: 4rem;
+    line-height: 3rem;
+    background-image:url(http://localhost:8000/../img/history-parallax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contex{
+    position: absolute;
+    top: 15rem;
+    margin-left: 40rem;
+    width: 30%;
+    background:black ;
+    color: $col;
+    padding: 10rem;
+    h1{
+        font-size: 4.4rem;
+        padding-bottom: 1.5rem;
+        display: inline-block;
+        width: auto;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        
+    }
+    h3{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        line-height: normal;
+    }
+    p{
+        margin-bottom:1rem ;
+        overflow-x: hidden;
+        font-family: 'FortLight';
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+    a{
+     font-family: 'FortBold';
+     font-size: 1.1rem;
+     color: $col;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
     }
 }
+.split{
+    margin-bottom: 25rem;
+    display: flex;
+
+    h2{
+        font-family: $font-family;
+        font-size: 4.4rem;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #000;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: 400;
+        letter-spacing: normal;
+    }
+    p{
+        margin-bottom:1rem ;
+        overflow-x: hidden;
+        font-family: 'FortLight';
+        font-size: 1.3rem;
+        line-height: 2;
+        color: #767676;
+    }
+    a{
+        font-family: 'FortBold';
+     font-size: 1.1rem;
+     color: #7162d2;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    }
+}
+.text-split{
+    display: block;
+    width: 28vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 15rem;
+    padding-right: 1.5rem;
+}
+.kep{
+    background-image:url(http://localhost:8000/../img/winery.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 60rem;
+  }
+@media screen and (max-width:1400px) {
+    .parallax{
+        height: 70vh;
+    }
+    .contex{
+        padding: 6rem;
+        width: 40%;
+        margin-left: 4.849rem;
+        
+            h1{
+                font-size: 2.4rem;
+                padding-bottom: 1.5rem;
+                display: inline-block;
+                width: auto;
+                margin-bottom: 2rem;
+                border-bottom: 1px solid #fff;
+                
+            }
+            h3{
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                line-height: normal;
+            }
+            p{
+                margin-bottom:2rem ;
+                overflow-x: hidden;
+                font-family: 'FortLight';
+                font-size: 1.3rem;
+                line-height: 2;
+            }
+            a{
+                font-family: 'FortBold';
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: block;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 11px;
+            }
+        
+    }
+    .white{
+        width: 100%;
+        height: 40vh; 
+     
+    }
+}
+@media screen and (max-width:500px){
+    .split{
+        flex-direction: column;
+    }
+    .parallax{
+        height: 70vh;
+    }
+    .contex{
+        margin-left: 2rem;
+        height: 50rem;
+        width: 90%;
+        
+            h1{
+                font-size: 1.6rem;
+                padding-bottom: 1rem;
+                display: inline-block;
+                width: auto;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid #fff;
+                
+            }
+            h3{
+                font-size: 0.6rem;
+                margin-bottom: 1rem;
+                line-height: normal;
+            }
+            p{
+                margin-bottom:2rem ;
+                overflow-x: hidden;
+                font-family: 'FortLight';
+                font-size: 1rem;
+                line-height: 2;
+            }
+            a{
+                font-family: 'FortBold';
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: block;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 11px;
+            }
+        
+    }
+    .white{
+        width: 100%;
+        height: 70vh; 
+     
+    }
+}
+
+
 /*hero vége*/

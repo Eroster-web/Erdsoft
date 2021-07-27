@@ -74,16 +74,28 @@
  <!--Navbar vége-->
   <!--main-->
   <section class="hero">
-<div class="first">
-  <img src="{{ asset('img/estate-header.jpg') }}" alt="" class="cropped1">
-    <h1>A birtok</h1>
-    </div>
+ 
+   <div class="parallax">
+     <h1>A birtok</h1>
+   </div>
+   <div class="white">
+   <div class="contex">
+                      <h1>Történet</h1>
+                        <h3>Magyarország elsőrangú és kivételes borainak legjava.</h3>
+                          <p>A Váradi család vaxco birtoka Mádon, az UNESCO világörökség részévé nyilváníitott, történelmi, 
+                              Tokaji borvidék területén található – egy kivételesen gazdag terroir, amely különféle termőtalajok találkozásából 
+                                keletkezett. A Juliet Victor sokrétű világa megteremti a tökéletes egyensúlyt történelmi és modern között: nagy múltú terroir és csúcstechnológiát 
+                                  alkalmazó előállítás. A Juliet Victor elegáns, száraz fehér és igazán egyedülálló, édes desszertborokat alkot a bor szerelmeseinek.</p>
+                                    <a href="#" class="next">Tovább</a>
+   </div>
+   </div>
+   <div class="parallax2"></div>
+  
+ 
   </section>
    <!--main vége-->
   
 <script src="{{asset('js/app.js')}}">
-
-
 </script>
 </body>
 </html>

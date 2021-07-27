@@ -103,21 +103,6 @@ selectElemnt('.menu-icons').addEventListener('click', function () {
 }); //nav nyitás,
 // When the user scrolls the page, execute myFunction
 
-window.onscroll = function () {
-  myFunction();
-};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
 /***/ }),
 
 /***/ "./resources/sass/app.scss":
@@ -138,8 +123,8 @@ function myFunction() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\Laravel\Kihívás\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\Laravel\Kihívás\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Laravel\Erdsoft\Kihívás\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\Laravel\Erdsoft\Kihívás\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
