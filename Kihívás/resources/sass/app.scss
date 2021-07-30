@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+
 *,
 *::before,
 *::after{
@@ -13,6 +15,7 @@ body{
 
 $col:white;
 $font-family: 'Rozha One', serif;
+
 
 /*nav css*/
 a{
@@ -255,155 +258,224 @@ ion-icon{
     text-transform: uppercase;
     }
 }
-.split{
-    margin-bottom: 25rem;
-    display: flex;
 
-    h2{
-        font-family: $font-family;
-        font-size: 4.4rem;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #000;
+.split{
+    display: flex;
+    object-fit: cover;
+    margin-bottom: 20rem;
+
+    .text-split{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 18rem;
+    
+        h2{
+            max-width: 21rem;
+            font-size: 4.4rem;
+        padding-bottom: 1.5rem;
         display: inline-block;
-        margin-bottom: 20px;
-        font-weight: 400;
-        letter-spacing: normal;
-    }
-    p{
-        margin-bottom:1rem ;
-        overflow-x: hidden;
+        width: auto;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #000;
+        }
+        p{
+            max-width: 38rem;
+            margin-bottom:1rem ;
+        color: #767676;
         font-family: 'FortLight';
         font-size: 1.3rem;
         line-height: 2;
-        color: #767676;
-    }
-    a{
-        font-family: 'FortBold';
-     font-size: 1.1rem;
-     color: #7162d2;
+        }
+        a{
+     font-size: 1.3rem;
+     color: #7162d2; //#ffba00;
+     font-weight: 900;
     cursor: pointer;
     display: inline-block;
     margin-top: 25px;
-    font-weight: bold;
+    line-height: 1;
     margin-bottom: 15px;
     text-transform: uppercase;
+        }
     }
 }
-.text-split{
-    display: block;
-    width: 28vw;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 15rem;
-    padding-right: 1.5rem;
-}
-.kep{
-    background-image:url(http://localhost:8000/../img/winery.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    height: 60rem;
-  }
-@media screen and (max-width:1400px) {
+
+
+
+@media screen and (min-width:300px){
     .parallax{
         height: 70vh;
-    }
-    .contex{
-        padding: 6rem;
-        width: 40%;
-        margin-left: 4.849rem;
-        
-            h1{
-                font-size: 2.4rem;
-                padding-bottom: 1.5rem;
-                display: inline-block;
-                width: auto;
-                margin-bottom: 2rem;
-                border-bottom: 1px solid #fff;
-                
-            }
-            h3{
-                font-size: 1.4rem;
-                margin-bottom: 1rem;
-                line-height: normal;
-            }
-            p{
-                margin-bottom:2rem ;
-                overflow-x: hidden;
-                font-family: 'FortLight';
-                font-size: 1.3rem;
-                line-height: 2;
-            }
-            a{
-                font-family: 'FortBold';
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            display: block;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-size: 11px;
-            }
-        
+        font-size: 2rem;
+        line-height: 3rem;
+        background-image:url(http://localhost:8000/../img/estate-header.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .white{
         width: 100%;
-        height: 40vh; 
-     
+        height: 100vh; 
     }
 }
-@media screen and (max-width:500px){
+    .parallax2{
+        margin-bottom: 8rem;
+        height: 70vh;
+        width: 100%;
+        color: $col;
+        font-size: 4rem;
+        line-height: 3rem;
+        background-image:url(http://localhost:8000/../img/history-parallax.jpg);
+        background-attachment: initial;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contex{
+        position: absolute;
+        top: 6rem;
+        margin-left: 9%;
+        width: 80%;
+        background:black ;
+        color: $col;
+        padding: 3rem;
+        h1{
+            font-size: 2.2rem;
+            padding-bottom: 1.5rem;
+            display: inline-block;
+            width: auto;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #fff;
+            
+        }
+        h3{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: normal;
+        }
+        p{
+            margin-bottom:1rem ;
+            overflow-x: hidden;
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+        a{
+         font-family: 'FortBold';
+         font-size: 1.1rem;
+         color: $col;
+        cursor: pointer;
+        display: inline;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        width: max-content;
+        text-transform: uppercase;
+        }
+    }
     .split{
+        position: relative;
+        display: flex;
         flex-direction: column;
+        margin-bottom: 20rem;
+    .kep{
+        background-image:url(http://localhost:8000/../img/winery.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:23rem;
+       
     }
-    .parallax{
-        height: 70vh;
-    }
-    .contex{
-        margin-left: 2rem;
-        height: 50rem;
-        width: 90%;
+        .text-split{
+            order: -1;
+            display: flex;
+            width: 60%;
+            justify-content: center;
+            flex-direction: column;
+            margin: 1rem ;
+            margin-inline: auto;
         
-            h1{
-                font-size: 1.6rem;
-                padding-bottom: 1rem;
-                display: inline-block;
-                width: auto;
-                margin-bottom: 1rem;
-                border-bottom: 1px solid #fff;
-                
+            h2{
+                font-size: 2.2rem;
+            padding-bottom: 1.5rem;
+            display: inline-block;
+            width: max-content;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #000;
             }
-            h3{
-                font-size: 0.6rem;
-                margin-bottom: 1rem;
-                line-height: normal;
-            }
+        
             p{
-                margin-bottom:2rem ;
+                margin-bottom:1rem ;
                 overflow-x: hidden;
-                font-family: 'FortLight';
-                font-size: 1rem;
-                line-height: 2;
+                width: auto;
+                font-size: 1.3rem;
+                line-height: 1.6;
             }
             a{
-                font-family: 'FortBold';
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            display: block;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-size: 11px;
+         font-size: 1.3rem;
+         color: #7162d2; //#ffba00;
+         font-weight: 900;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 25px;
+        line-height: 1;
+        margin-bottom: 15px;
+        width: max-content;
+        text-transform: uppercase;
             }
+        }
+    }
+    .next-2{
+        width: max-content;
+        position: relative;
+    }
+    .read{
+        position: relative;
+        top: 0.7rem;
+        left: 2rem;
+        height: 24px;
+        width: 12px;
+    }
+   .no2{
+       margin-top: -10rem;
+   }
+    .text{
+        position: relative;
+        margin: -2rem auto;
+        padding: 3rem;
+        width: 70%;
+      
+        h2{
+
+            color: #ebe9eb;
+            font-size: 2.2rem;
+        padding-bottom: 1.5rem;
+        display: inline-block;
+        width: max-content;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        }
+    
+        p{
+            color:#ebe9eb;;
+            margin-bottom:1rem ;
+            overflow-x: hidden;
+            width: auto;
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
         
+        background-color:#8969d4 ;
     }
-    .white{
-        width: 100%;
-        height: 70vh; 
-     
+    .ter{
+       
+        
+        background-image:url(http://localhost:8000/../img/territory.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:15rem;
     }
-}
-
-
 /*hero vége*/
