@@ -459,7 +459,7 @@ ion-icon{
         }
     
         p{
-            color:#ebe9eb;;
+            color:#ebe9eb;
             margin-bottom:1rem ;
             overflow-x: hidden;
             width: auto;
@@ -478,4 +478,202 @@ ion-icon{
         background-size: cover;
         height:15rem;
     }
+    .gif{
+        width: 100%;
+        margin:10rem 0;
+        margin-bottom: 10rem;
+        text-align: center;
+        background-color: #8969d4;
+        h3{
+           
+        color: #ebe9eb;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        }
+        p{
+            padding: 1.75rem;
+            color:#ebe9eb;
+            overflow-x: hidden;
+            width: auto;
+            font-size: 1.6rem;
+
+        }
+        span{
+                font-weight: bolder;
+        }
+    }
+    .leir{
+        .mad{
+            height: 11rem;
+            position: absolute;
+            top: 0;
+            left: -3rem;
+        }
+        .tropi {
+            height: 3rem;
+            width: 3rem;
+            position: relative;
+            top: 4rem;
+            
+        }
+        position: relative;
+        background:#ebe9eb;
+        width: calc(100% - 5rem);
+        padding-left: 5.5rem;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        padding-right: 20px;
+        .inner-leir{
+            padding: 5rem 0;
+            h3{
+                font-size: 2rem;
+                line-height: 1;
+                padding-bottom: 2.5rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 1px solid #000;
+              }
+              p{
+                  color:#767676;
+                  font-size: 1rem;
+                  letter-spacing: 3px;
+                  line-height: 1.75;
+              }
+              .csom{
+                margin-bottom: 1.5rem;}
+              a{
+                  font-size: 1rem;
+                  color: #7162d2; //#ffba00;
+                  font-weight: 900;
+                 cursor: pointer;
+                 display: inline-block;
+                 margin-top: 25px;
+                 line-height: 1;
+                 letter-spacing: 3px;
+                 margin-bottom: 15px;
+                 width: max-content;
+                 text-transform: uppercase;
+                 .read2{
+                    position: relative;
+                    top: 0.3rem;
+                    left: 1.5rem;
+                    height: 14px;
+                    width: 8px;
+                            }
+              }
+                            .add{
+                                background-color: #8a69d4;
+                            border: none;
+                            color: #fff;
+                            font-size: 1rem;
+                            text-align: center;
+                            letter-spacing: 2px;
+                            height: 24px;
+                            line-height: normal;
+                            border-radius: 24px;
+                            text-transform: uppercase;
+                                    }
+                                label{
+                                    font-family: $font-family;
+                                    font-size: 1.9rem;
+                                    font-weight: bolder;
+                                        }
+                                    #bor1{
+                                        text-align: center;
+                                        border: none;
+                                        margin-right: 2rem;
+                                        width: 3rem;
+                                        height: 2.4rem;
+                                            }
+            }
+        
+    }
+    .leir2{
+        .mad2{
+            height: 15rem;
+            position: absolute;
+            top: -2rem;
+            left: -2rem;
+        }
+        .tropi2 {
+            height: 3rem;
+            width: 3rem;
+            position: relative;
+            top: 4rem;
+            
+        }
+        position: relative;
+        background:#ebe9eb;
+        width: calc(100% - 4rem);
+        padding-left: 7.5rem;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        padding-right: 20px;
+        .inner-leir2{
+            padding: 5rem 0;
+            h3{
+                font-size: 2rem;
+                line-height: 1;
+                
+              }
+              .line{padding-bottom: 2.5rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 1px solid #000;}
+             
+              p{
+                  color:#767676;
+                  font-size: 0.886rem;
+                  letter-spacing: 3px;
+                  line-height: 1.75;
+                  
+              }
+    
+              a{
+                  font-size: 1rem;
+                  color: #7162d2; //#ffba00;
+                  font-weight: 900;
+                 cursor: pointer;
+                 display: inline-block;
+                 margin-top: 25px;
+                 line-height: 1;
+                 letter-spacing: 3px;
+                 margin-bottom: 15px;
+                 width: max-content;
+                 text-transform: uppercase;
+                 .read3{
+                    position: relative;
+                    top: 0.3rem;
+                    left: 1.5rem;
+                    height: 14px;
+                    width: 8px;
+                            }
+              }
+                            .add2{
+                                background-color: #8a69d4;
+                            border: none;
+                            color: #fff;
+                            font-size: 1rem;
+                            text-align: center;
+                            letter-spacing: 2px;
+                            height: 24px;
+                            line-height: normal;
+                            border-radius: 24px;
+                            text-transform: uppercase;
+                                    }
+                                label{
+                                    font-family: $font-family;
+                                    font-size: 1.9rem;
+                                    font-weight: bolder;
+                                        }
+                                    #bor2{
+                                        text-align: center;
+                                        border: none;
+                                        margin-right: 2rem;
+                                        width: 3rem;
+                                        height: 2.4rem;
+                                            }
+            }
+    }
+
 /*hero vége*/

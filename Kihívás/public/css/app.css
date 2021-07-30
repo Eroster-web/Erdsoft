@@ -528,5 +528,228 @@ ion-icon {
   height: 15rem;
 }
 
+.gif {
+  width: 100%;
+  margin: 10rem 0;
+  margin-bottom: 10rem;
+  text-align: center;
+  background-color: #8969d4;
+}
+
+.gif h3 {
+  color: #ebe9eb;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.gif p {
+  padding: 1.75rem;
+  color: #ebe9eb;
+  overflow-x: hidden;
+  width: auto;
+  font-size: 1.6rem;
+}
+
+.gif span {
+  font-weight: bolder;
+}
+
+.leir {
+  position: relative;
+  background: #ebe9eb;
+  width: calc(100% - 5rem);
+  padding-left: 5.5rem;
+  margin-inline: auto;
+  margin-bottom: 100px;
+  padding-right: 20px;
+}
+
+.leir .mad {
+  height: 11rem;
+  position: absolute;
+  top: 0;
+  left: -3rem;
+}
+
+.leir .tropi {
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  top: 4rem;
+}
+
+.leir .inner-leir {
+  padding: 5rem 0;
+}
+
+.leir .inner-leir h3 {
+  font-size: 2rem;
+  line-height: 1;
+  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.leir .inner-leir p {
+  color: #767676;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: 1.75;
+}
+
+.leir .inner-leir .csom {
+  margin-bottom: 1.5rem;
+}
+
+.leir .inner-leir a {
+  font-size: 1rem;
+  color: #7162d2;
+  font-weight: 900;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 25px;
+  line-height: 1;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: uppercase;
+}
+
+.leir .inner-leir a .read2 {
+  position: relative;
+  top: 0.3rem;
+  left: 1.5rem;
+  height: 14px;
+  width: 8px;
+}
+
+.leir .inner-leir .add {
+  background-color: #8a69d4;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 2px;
+  height: 24px;
+  line-height: normal;
+  border-radius: 24px;
+  text-transform: uppercase;
+}
+
+.leir .inner-leir label {
+  font-family: "Rozha One", serif;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.leir .inner-leir #bor1 {
+  text-align: center;
+  border: none;
+  margin-right: 2rem;
+  width: 3rem;
+  height: 2.4rem;
+}
+
+.leir2 {
+  position: relative;
+  background: #ebe9eb;
+  width: calc(100% - 4rem);
+  padding-left: 7.5rem;
+  margin-inline: auto;
+  margin-bottom: 100px;
+  padding-right: 20px;
+}
+
+.leir2 .mad2 {
+  height: 15rem;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
+.leir2 .tropi2 {
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  top: 4rem;
+}
+
+.leir2 .inner-leir2 {
+  padding: 5rem 0;
+}
+
+.leir2 .inner-leir2 h3 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.leir2 .inner-leir2 .line {
+  padding-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.leir2 .inner-leir2 p {
+  color: #767676;
+  font-size: 0.886rem;
+  letter-spacing: 3px;
+  line-height: 1.75;
+}
+
+.leir2 .inner-leir2 a {
+  font-size: 1rem;
+  color: #7162d2;
+  font-weight: 900;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 25px;
+  line-height: 1;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: uppercase;
+}
+
+.leir2 .inner-leir2 a .read3 {
+  position: relative;
+  top: 0.3rem;
+  left: 1.5rem;
+  height: 14px;
+  width: 8px;
+}
+
+.leir2 .inner-leir2 .add2 {
+  background-color: #8a69d4;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 2px;
+  height: 24px;
+  line-height: normal;
+  border-radius: 24px;
+  text-transform: uppercase;
+}
+
+.leir2 .inner-leir2 label {
+  font-family: "Rozha One", serif;
+  font-size: 1.9rem;
+  font-weight: bolder;
+}
+
+.leir2 .inner-leir2 #bor2 {
+  text-align: center;
+  border: none;
+  margin-right: 2rem;
+  width: 3rem;
+  height: 2.4rem;
+}
+
 /*hero vége*/
 

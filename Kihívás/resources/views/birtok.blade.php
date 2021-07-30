@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="icon" href="{{ asset('img/icon.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,12 +94,65 @@
           <div class="text">
             <h2>A terület</h2>
           <p>A Juliet Victor számára a világhírű Tokaji borvidék szívében található Mád történelmi községe tökéletes éghajlati feltételeket, termőtalajt és bortermelő területet biztosít, amely az egyedülálló erjesztési és érlelési folyamatok képességének, mesterségbeli tudásának is táptalajává válik.</p>
-          
         </div>
         <div class="ter"></div>
      </section>
+     <section>
+   <div class="gif">
+     <h3>A kíváncsiságod megjutalmazzuk!!</h3>
+     <p>Következő vásárlásod alkamával használd a <span>JVRULE007</span> kuponkódot </p>
+   </div>
+ </section>
+     <section>
+       <div class="leir">
+       <img class="mad" src="{{ asset('img/valentinnapicsomag.png') }}">
+       <div class="madki">
+         <img class="tropi" src="{{ asset('img/gold-decanter-2020.png') }}" alt="">
+         <img class="tropi" src="{{ asset('img/international_trophy_2020-1.png') }}" alt="">
+                          </div>
+                                              <div class="inner-leir">
+                                              <h3>Mád kincsei</h3>
+                                              <p class="csom">A CSOMAG TARTALMA:</p>
+
+                                      <p>1 PALACK BOMBOLY FURMINT 2017<br>
+                                      1 PALACK SZAMORODNI 2017</p>
+                                      <a href="#">Bővebben<img class="read2" src="{{ asset('img/readmore-arrow.png') }}"></a>
+
+                                      <form action="POST" targer="#">
+                                            <label for="bor1">15 990Ft</label><br>
+                                      <input type="number" id="bor1" value="1" name="bor1"
+                                            min="1" max="100"><input class="add" value="Vásrárlás">
+                                            </form>
+                                            </div>
+       </div>
+     </section>
+     <section>
+       <div class="leir2">
+       <img class="mad2" src="{{ asset('img/bor2.png') }}">
+       <div class="madki2">
+         <img class="tropi2" src="{{ asset('img/international_trophy_2020-1.png') }}" alt="">
+         <img class="tropi2" src="{{ asset('img/dub2020.png') }}" alt="">
+         <img class="tropi2" src="{{ asset('img/grand.png') }}" alt="">
+         <img class="tropi2" src="{{ asset('img/dec2019.png') }}" alt="">
+        
+                          </div>
+                                              <div class="inner-leir2">
+                                              <h3>Szamorodni 2017</h3>
+                                              <p class="line">2017 / ÉDES</p>
+                                           
+
+                                      <p>HALVÁNY ARANY SZÍNŰ LÁGY MOZGÁSÚ ÉDES BOR.</p>
+                                      <a href="#">Bővebben<img class="read3" src="{{ asset('img/readmore-arrow.png') }}"></a>
+
+                                      <form action="POST" targer="#">
+                                            <label for="bor2">9990Ft</label><br>
+                                      <input type="number" id="bor2" value="1" name="bor2"
+                                            min="1" max="100"><input class="add2" value="Vásrárlás">
+                                            </form>
+                                            </div>
+       </div>
+     </section>
      
- 
   
 <script src="{{asset('js/app.js')}}">
 </script>
