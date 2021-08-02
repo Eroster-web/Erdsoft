@@ -189,6 +189,17 @@ li.move-right {
 /*nav css vége*/
 
 @media screen and (max-width: 950px) {
+  .sub-menu {
+    background: black;
+    width: 13rem;
+    padding: 1rem;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+  }
+
   .langu {
     display: flex;
     justify-content: space-between;
@@ -236,7 +247,7 @@ li.move-right {
   }
 
   .nav-list > li:first-child {
-    margin-top: 15rem;
+    margin-top: 5rem;
   }
 
   .sub-menu {
