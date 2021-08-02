@@ -18,6 +18,13 @@ body {
 
 /*nav css*/
 
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,6 +34,7 @@ ul {
 }
 
 header {
+  position: sticky;
   width: 100%;
   background: black;
 }
@@ -227,6 +235,10 @@ li.move-right {
     line-height: 6rem;
   }
 
+  .nav-list > li:first-child {
+    margin-top: 15rem;
+  }
+
   .sub-menu {
     display: flex;
     justify-content: center;
@@ -242,7 +254,7 @@ li.move-right {
 
   .menu-icons {
     position: absolute;
-    top: 10%;
+    top: 80%;
     display: block;
   }
 
@@ -807,6 +819,10 @@ li.move-right {
     background-attachment: fixed;
   }
 
+  .parallax h1 {
+    font-size: 4rem;
+  }
+
   .white {
     height: 60vh;
   }
@@ -1163,6 +1179,10 @@ li.move-right {
     height: 35vh;
   }
 
+  .white h1 {
+    font-size: 3.6rem;
+  }
+
   .parallax2 {
     margin-bottom: 20rem;
     height: 56vh;
@@ -1307,14 +1327,14 @@ li.move-right {
   .pill .pills li {
     color: #000;
     display: block;
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
     font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  .parallax {
-    font-size: 4.4rem;
+  .parallax h1 {
+    font-size: 5rem;
   }
 
   .text {

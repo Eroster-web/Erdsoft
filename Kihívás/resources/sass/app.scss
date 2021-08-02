@@ -18,6 +18,12 @@ $font-family: 'Rozha One', serif;
 
 
 /*nav css*/
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
 a{
 text-decoration: none;
 }
@@ -25,6 +31,7 @@ ul{
 list-style: none;
 }
 header{
+    position: sticky;
 width: 100%;
 background: black;
 }
@@ -190,6 +197,9 @@ z-index: 1000;
 .nav-list > li{
 line-height: 6rem;
 }
+.nav-list> li:first-child{
+    margin-top: 15rem;
+}
 .sub-menu{
 display: flex;
 justify-content: center;
@@ -203,7 +213,7 @@ max-height: initial;
 }
 .menu-icons{
 position: absolute;
-top: 10%;
+top: 80%;
 display: block;
 }
 .language{
@@ -703,6 +713,9 @@ font-weight: bolder;
 @media screen and (min-width:760px){
 .parallax{
 background-attachment: fixed;
+h1{
+    font-size: 4rem;
+}
 }
 .white{
 height: 60vh; 
@@ -1025,6 +1038,9 @@ padding: 1rem;
 @media screen and (min-width:990px){
 .white{
 height: 35vh;
+h1{
+    font-size: 3.6rem;
+}
 }
 .parallax2{
 margin-bottom: 20rem;
@@ -1126,8 +1142,8 @@ transition: 1s ease-in-out all;
 min-width: 100%;
 min-height: 25rem;
 height: auto;
-}
-}
+            }
+        }
 }
 .des{
 flex: 0 0 25%;
@@ -1135,11 +1151,11 @@ margin-inline: auto;
 margin-top: 15rem;
 h2{
 font-size: 4.4rem;
-}
+    }
 p{
 font-size: 1.3rem;
 line-height: 2;
-}
+    }
 }
 .pill{
 margin-top: 15rem;
@@ -1153,30 +1169,30 @@ text-transform: uppercase;
 li{
 color: #000;
 display: block;
-padding: 2rem 5rem;
+padding: 2rem 3rem;
 font-size: 1.6rem;
-
-}
-}
-}
+            }
+                }
+                    }
 }
 @media screen and(min-width:1300px) {
 .parallax{
-font-size: 4.4rem;
-}
+    h1{
+font-size: 5rem;
+        }
+            }
 .text{
 position: relative;
 margin: 10rem 0 0 0; 
 margin-left: 37rem;
 padding: 10rem 12rem;
 width: 30%;
-
 }
 .carousel {
 flex: 0 0 60%;
 margin-top: 10rem;
 height: 70rem;
 margin-left: 0;
-}
+            }
 }
 /*hero vége*/

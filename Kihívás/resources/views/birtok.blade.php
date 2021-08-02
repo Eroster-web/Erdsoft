@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--Navbar-->
-  <header>
+  <header id="head">
     <div class="container" id="navbar">
       <nav>
       <div class="menu-icons">
@@ -59,18 +59,11 @@
   <section class="hero">
 
 
-
-
-  
  <!--Paralax háttér No.1.-->
    <div class="parallax">
      <h1>A birtok</h1>
    </div>
    <!--Paralax vége-->
-
-
-
-
 
 
    <!--Fehér elem ami tartalmazza fekete hátteres szöveget-->
@@ -86,10 +79,6 @@
    </div>
    </div>
    <!--Fehér elem vége-->
-
-
-
-
 
 
    <!--Paralax háttér No.2.-->
@@ -117,8 +106,6 @@
      <!--A borászat vége-->
 
 
-
-
      <!--A terület-->
      <section class="no2">
           <div class="text">
@@ -128,8 +115,6 @@
         <div class="ter"></div>
      </section>
    <!--A terület vége-->
-
-
 
 
 
