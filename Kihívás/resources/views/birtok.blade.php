@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="icon" href="{{ asset('img/icon.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
     <title>Document</title>
     <!--Ion icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
   <!--Navbar-->
@@ -59,11 +57,22 @@
 
   <!--main-->
   <section class="hero">
+
+
+
+
+  
  <!--Paralax háttér No.1.-->
    <div class="parallax">
      <h1>A birtok</h1>
    </div>
    <!--Paralax vége-->
+
+
+
+
+
+
    <!--Fehér elem ami tartalmazza fekete hátteres szöveget-->
    <div class="white">
    <div class="contex">
@@ -78,12 +87,19 @@
    </div>
    <!--Fehér elem vége-->
 
+
+
+
+
+
    <!--Paralax háttér No.2.-->
    <div class="parallax2"></div>
+  </section>
   <!--Paralax háttér vége-->
 
-  </section>
 
+
+  <!--A borászat-->
   <section>
        <div class="split">
           <div class="kep"></div>
@@ -98,6 +114,12 @@
 </div>
        </div>
      </section>
+     <!--A borászat vége-->
+
+
+
+
+     <!--A terület-->
      <section class="no2">
           <div class="text">
             <h2>A terület</h2>
@@ -105,8 +127,13 @@
         </div>
         <div class="ter"></div>
      </section>
-   
+   <!--A terület vége-->
 
+
+
+
+
+<!--A view js-->
 <section>
   <div class="pill">
     <ul class="pills">
@@ -122,20 +149,17 @@
   <div class="vue">
 <div class="carousel">
   <div class="slides">
-    <img src="{{ asset('img/uragya01.jpg') }}" alt="slide image" class="slide">
-    <img src="{{ asset('img/uragya02.jpg') }}" alt="slide image" class="slide">
-    <img src="{{ asset('img/uragya03.jpg') }}" alt="slide image" class="slide">
-    <img src="{{ asset('img/uragya04.jpg') }}" alt="slide image" class="slide">
-    <img src="{{ asset('img/uragya05.jpg') }}" alt="slide image" class="slide">
-    <img src="{{ asset('img/uragya06.jpg') }}" alt="slide image" class="slide">
+    <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya1" class="slide">
+    <img src="{{ asset('img/uragya02.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/uragya03.jpg') }}" alt="uragya3" class="slide">
+    <img src="{{ asset('img/uragya04.jpg') }}" alt="uragya4" class="slide">
+    <img src="{{ asset('img/uragya05.jpg') }}" alt="uragya5" class="slide">
+    <img src="{{ asset('img/uragya06.jpg') }}" alt="uragya6" class="slide">
   </div>
- 
   <div class="controls">
     <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
     <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
   </div>
-  
-  
 </div>
 <div class="des">
 <h2>Úrágya</h2>
@@ -143,18 +167,22 @@
 </div>
 </div>
 </section>
+<!--View js vége-->
 
 
 
-
-
-
+<!--Ajándék-->
      <section>
    <div class="gift">
      <h3>A kíváncsiságod megjutalmazzuk!!</h3>
      <p>Következő vásárlásod alkamával használd a <span>JVRULE007</span> kuponkódot </p>
    </div>
  </section>
+ <!--Ajándék vége-->
+
+
+
+ <!--A borok-->
      <section class="fl">
        <div class="leir">
        <img class="mad" src="{{ asset('img/valentinnapicsomag.png') }}">
@@ -202,7 +230,10 @@
                                             </div>
        </div>
      </section>
-     
+     <!--A borok vége-->
+
+
+
   
 <script src="{{asset('js/app.js')}}">
 </script>

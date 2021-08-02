@@ -54,6 +54,11 @@ header {
 
 .lang a {
   color: white;
+  transition: color 650ms;
+}
+
+.lang a:hover {
+  color: #7162d2;
 }
 
 .langu {
@@ -261,8 +266,6 @@ li.move-right {
     display: flex;
   }
 }
-
-/*hero*/
 
 .parallax {
   height: 70vh;
@@ -1310,6 +1313,10 @@ li.move-right {
 }
 
 @media screen and (min-width: 1300px) {
+  .parallax {
+    font-size: 4.4rem;
+  }
+
   .text {
     position: relative;
     margin: 10rem 0 0 0;

@@ -1,13 +1,11 @@
+//carousel global import//
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
-
-const delay = 3000; //ms
-
+//slider//
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
-
 let current = 0;
 let count = 0;
 function changeSlide(next = true) {
@@ -19,12 +17,12 @@ function changeSlide(next = true) {
 
   slides.style.left = current + "%";
 }
-
+//Kupon show//
 function showdiv(){
     document.querySelector('.gift').style.visibility="visible";
 }
 
-// Controls
+//mozgatás//
 document.querySelector(".next-slide").addEventListener("click", function() {
   changeSlide();
     count++;
@@ -42,7 +40,7 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
 });
 
 
-
+//class active//
 var selector = '.pills li';
 
 $(selector).on('click', function(){
@@ -52,11 +50,9 @@ $(selector).on('click', function(){
 
 
 
-
-
+//nav nyitás/csukás//
 const selectElemnt = (element) => document.querySelector(element)
 
-//nav nyitás,csukás
 selectElemnt('.menu-icons').addEventListener('click',()=>{
     selectElemnt('nav').classList.toggle('active')
 })

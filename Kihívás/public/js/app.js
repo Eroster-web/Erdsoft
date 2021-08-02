@@ -12649,10 +12649,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-carousel */ "./node_modules/vue-carousel/dist/vue-carousel.min.js");
 /* harmony import */ var vue_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_carousel__WEBPACK_IMPORTED_MODULE_1__);
+//carousel global import//
 
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_carousel__WEBPACK_IMPORTED_MODULE_1___default.a);
-var delay = 3000; //ms
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_carousel__WEBPACK_IMPORTED_MODULE_1___default.a); //slider//
 
 var slides = document.querySelector(".slides");
 var slidesCount = slides.childElementCount;
@@ -12670,11 +12670,12 @@ function changeSlide() {
   }
 
   slides.style.left = current + "%";
-}
+} //Kupon show//
+
 
 function showdiv() {
   document.querySelector('.gift').style.visibility = "visible";
-} // Controls
+} //mozgatás//
 
 
 document.querySelector(".next-slide").addEventListener("click", function () {
@@ -12692,17 +12693,17 @@ document.querySelector(".prev-slide").addEventListener("click", function () {
   if (count >= 3) {
     showdiv();
   }
-});
+}); //class active//
+
 var selector = '.pills li';
 $(selector).on('click', function () {
   $(selector).removeClass('active');
   $(this).addClass('active');
-});
+}); //nav nyitás/csukás//
 
 var selectElemnt = function selectElemnt(element) {
   return document.querySelector(element);
-}; //nav nyitás,csukás
-
+};
 
 selectElemnt('.menu-icons').addEventListener('click', function () {
   selectElemnt('nav').classList.toggle('active');
