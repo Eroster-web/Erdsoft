@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="icon" href="{{ asset('img/icon.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
     <title>Document</title>
     <!--Ion icons-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -40,11 +42,16 @@
         <!--Legördülő menü vége-->
         <li><a href="#">HÍREK</a></li>
         <li><a href="#">KAPCSOLAT</a></li>
-        <li class="move-right btn">
-          <div class="language">    <!--Hiányzió rész..-->     </div>
-          <a href="#" class="kosar">kosár<ion-icon name="cart"></ion-icon><span class="badge">1</span></a>
-        </li>
-      </ul>
+        </ul>
+        <div class="langu">
+        <ul class="lang">
+          <li><a href="#"><ion-icon name="person"></ion-icon>BELÉPÉS</a></li>
+          <li><a href="#">HU |</a></li>
+          <li><a href="#">EN |</a></li>
+          <li><a href="#">日本語</a></li>
+        </ul> 
+        <p class="kos">Kosár<ion-icon name="cart"></ion-icon></p>
+        </div>
       </nav>
     </div>
   </header>
@@ -76,6 +83,7 @@
   <!--Paralax háttér vége-->
 
   </section>
+
   <section>
        <div class="split">
           <div class="kep"></div>
@@ -97,19 +105,63 @@
         </div>
         <div class="ter"></div>
      </section>
+   
+
+<section>
+  <div class="pill">
+    <ul class="pills">
+      <li id="bet">BETSEK</li>
+      <li id="hol">HOLDVÖLGY</li>
+      <li id="kir">KIRÁLY</li>
+      <li id="bom">BOMBOLY</li>
+      <li id="szen">SZENT-TAMÁS</li>
+      <li id="ver">Veres</li>
+      <li class="active" id="úrá">Úrágya</li>
+    </ul>
+  </div>
+  <div class="vue">
+<div class="carousel">
+  <div class="slides">
+    <img src="{{ asset('img/uragya01.jpg') }}" alt="slide image" class="slide">
+    <img src="{{ asset('img/uragya02.jpg') }}" alt="slide image" class="slide">
+    <img src="{{ asset('img/uragya03.jpg') }}" alt="slide image" class="slide">
+    <img src="{{ asset('img/uragya04.jpg') }}" alt="slide image" class="slide">
+    <img src="{{ asset('img/uragya05.jpg') }}" alt="slide image" class="slide">
+    <img src="{{ asset('img/uragya06.jpg') }}" alt="slide image" class="slide">
+  </div>
+ 
+  <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+  </div>
+  
+  
+</div>
+<div class="des">
+<h2>Úrágya</h2>
+<p>A Mád nyugati részén található Úrágya dűlő 0,6 hektáron 2,6 m x 1 m-es térállású területen folytatunk szőlőtermesztést. Furmint és hárslevelű fajta összetétellel rendelkezik az a térség, ahol ernyős művelésmódban termelünk a sűrű lombozat kifejlődésének elkerüléséért. A talaj pincészetünk legkövesebb területe, vörösagyag és riolittufa keveréke. Az egri Eszterházy Károly Egyetem fúrásokat végzett a területen, melynek során - 20 m mélységig hatolva - 11 talajréteget érintettek. Mindez jól példázza, milyen változatos az altalaj ebben az termő közegben, amelyet a szőlő a gyökérzetén keresztül képes megjeleníteni a szőlőbogyóban. A belőle készülő bor rendkívül testes és komplex, köszönhetően a gazdag ásványos termőtalajnak. A szőlőterületet úgynevezett kőbástyák ölelik körül, így - hangulatán kívül - mikroklímája is egyedülálló.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
      <section>
-   <div class="gif">
+   <div class="gift">
      <h3>A kíváncsiságod megjutalmazzuk!!</h3>
      <p>Következő vásárlásod alkamával használd a <span>JVRULE007</span> kuponkódot </p>
    </div>
  </section>
-     <section>
+     <section class="fl">
        <div class="leir">
        <img class="mad" src="{{ asset('img/valentinnapicsomag.png') }}">
-       <div class="madki">
+      
          <img class="tropi" src="{{ asset('img/gold-decanter-2020.png') }}" alt="">
          <img class="tropi" src="{{ asset('img/international_trophy_2020-1.png') }}" alt="">
-                          </div>
+                          
                                               <div class="inner-leir">
                                               <h3>Mád kincsei</h3>
                                               <p class="csom">A CSOMAG TARTALMA:</p>
@@ -125,17 +177,15 @@
                                             </form>
                                             </div>
        </div>
-     </section>
-     <section>
+
        <div class="leir2">
        <img class="mad2" src="{{ asset('img/bor2.png') }}">
-       <div class="madki2">
          <img class="tropi2" src="{{ asset('img/international_trophy_2020-1.png') }}" alt="">
          <img class="tropi2" src="{{ asset('img/dub2020.png') }}" alt="">
          <img class="tropi2" src="{{ asset('img/grand.png') }}" alt="">
          <img class="tropi2" src="{{ asset('img/dec2019.png') }}" alt="">
         
-                          </div>
+                        
                                               <div class="inner-leir2">
                                               <h3>Szamorodni 2017</h3>
                                               <p class="line">2017 / ÉDES</p>

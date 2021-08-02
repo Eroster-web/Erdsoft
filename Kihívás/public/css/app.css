@@ -38,6 +38,56 @@ header {
   padding: 0 1.5rem;
 }
 
+.lang {
+  color: white;
+  display: flex;
+}
+
+.lang > li > a > ion-icon {
+  margin-right: 1rem;
+}
+
+.lang > li {
+  font-size: 1.1rem;
+  padding: 0 5px;
+}
+
+.lang a {
+  color: white;
+}
+
+.langu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 90%;
+}
+
+.langu p {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.langu .kos {
+  background-color: #7162d2;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  transition: padding-bottom 650ms;
+}
+
+.kos:hover {
+  padding-bottom: 1.3rem;
+}
+
 .menu-icons {
   color: white;
   font-size: 5rem;
@@ -55,6 +105,7 @@ nav {
   height: 9.5rem;
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
 }
 
 .logo {
@@ -66,9 +117,11 @@ nav {
 }
 
 .nav-list {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .nav-list li {
@@ -92,24 +145,6 @@ nav {
 
 .nav-list a:hover {
   color: #7162d2;
-}
-
-.kosar {
-  pointer-events: none;
-}
-
-.badge {
-  border: 0.1rem solid white;
-  padding: 0.5rem;
-  border-radius: 50%;
-}
-
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  background: #7162d2;
-  border: 3px solid #7162d2;
-  transition: transform 450ms;
 }
 
 .first {
@@ -138,14 +173,37 @@ li.move-right {
   margin-left: 2rem;
 }
 
-ion-icon {
-  line-height: initial;
-  margin-left: 1rem;
-}
-
 /*nav css vége*/
 
 @media screen and (max-width: 950px) {
+  .langu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 90%;
+  }
+
+  .langu p {
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .langu .kos {
+    background-color: #7162d2;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: white;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+    font-size: 1.4em;
+    text-transform: uppercase;
+  }
+
   .nav-list {
     background: black;
     position: fixed;
@@ -155,6 +213,7 @@ ion-icon {
     display: none;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     opacity: 0.8;
     z-index: 1000;
   }
@@ -176,16 +235,14 @@ ion-icon {
     max-height: initial;
   }
 
-  li.move-right {
-    display: block;
-    margin: 0 auto;
-    line-height: initial;
-  }
-
   .menu-icons {
     position: absolute;
     top: 10%;
     display: block;
+  }
+
+  .language {
+    color: white;
   }
 
   .ion-md-close {
@@ -208,16 +265,15 @@ ion-icon {
 /*hero*/
 
 .parallax {
-  height: 73.5vh;
-  width: auto;
-  color: white;
-  font-size: 4rem;
+  height: 70vh;
+  font-size: 2rem;
   line-height: 3rem;
   background-image: url(http://localhost:8000/../img/estate-header.jpg);
-  background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  color: white;
+  background-attachment: initial;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,132 +281,8 @@ ion-icon {
 
 .white {
   width: 100%;
-  height: 40vh;
-  position: relative;
-}
-
-.parallax2 {
-  margin-bottom: 20rem;
   height: 70vh;
-  width: 100%;
-  color: white;
-  font-size: 4rem;
-  line-height: 3rem;
-  background-image: url(http://localhost:8000/../img/history-parallax.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contex {
-  position: absolute;
-  top: 15rem;
-  margin-left: 40rem;
-  width: 30%;
-  background: black;
-  color: white;
-  padding: 10rem;
-}
-
-.contex h1 {
-  font-size: 4.4rem;
-  padding-bottom: 1.5rem;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #fff;
-}
-
-.contex h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  line-height: normal;
-}
-
-.contex p {
-  margin-bottom: 1rem;
-  overflow-x: hidden;
-  font-family: "FortLight";
-  font-size: 1.3rem;
-  line-height: 2;
-}
-
-.contex a {
-  font-family: "FortBold";
-  font-size: 1.1rem;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.split {
-  display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 20rem;
-}
-
-.split .text-split {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 18rem;
-}
-
-.split .text-split h2 {
-  max-width: 21rem;
-  font-size: 4.4rem;
-  padding-bottom: 1.5rem;
-  display: inline-block;
-  width: auto;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #000;
-}
-
-.split .text-split p {
-  max-width: 38rem;
-  margin-bottom: 1rem;
-  color: #767676;
-  font-family: "FortLight";
-  font-size: 1.3rem;
-  line-height: 2;
-}
-
-.split .text-split a {
-  font-size: 1.3rem;
-  color: #7162d2;
-  font-weight: 900;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: 25px;
-  line-height: 1;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 300px) {
-  .parallax {
-    height: 70vh;
-    font-size: 2rem;
-    line-height: 3rem;
-    background-image: url(http://localhost:8000/../img/estate-header.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .white {
-    width: 100%;
-    height: 100vh;
-  }
+  position: relative;
 }
 
 .parallax2 {
@@ -452,6 +384,7 @@ ion-icon {
 .split .text-split p {
   margin-bottom: 1rem;
   overflow-x: hidden;
+  color: #767676;
   width: auto;
   font-size: 1.3rem;
   line-height: 1.6;
@@ -528,7 +461,8 @@ ion-icon {
   height: 15rem;
 }
 
-.gif {
+.gift {
+  visibility: hidden;
   width: 100%;
   margin: 10rem 0;
   margin-bottom: 10rem;
@@ -536,7 +470,7 @@ ion-icon {
   background-color: #8969d4;
 }
 
-.gif h3 {
+.gift h3 {
   color: #ebe9eb;
   font-size: 2rem;
   padding-bottom: 2rem;
@@ -544,7 +478,7 @@ ion-icon {
   border-bottom: 1px solid #fff;
 }
 
-.gif p {
+.gift p {
   padding: 1.75rem;
   color: #ebe9eb;
   overflow-x: hidden;
@@ -552,7 +486,7 @@ ion-icon {
   font-size: 1.6rem;
 }
 
-.gif span {
+.gift span {
   font-weight: bolder;
 }
 
@@ -749,6 +683,647 @@ ion-icon {
   margin-right: 2rem;
   width: 3rem;
   height: 2.4rem;
+}
+
+.carousel {
+  margin-inline: auto;
+  margin-top: 10rem;
+  width: 90%;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .controls {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
+
+.carousel .controls .control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.carousel .next {
+  height: 4rem;
+  width: 3rem;
+}
+
+.carousel .back {
+  height: 4rem;
+  width: 3rem;
+  transform: rotate(180deg);
+}
+
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}
+
+.carousel .slides .slide {
+  min-width: 100%;
+  min-height: 25rem;
+  height: auto;
+}
+
+.des {
+  margin-inline: auto;
+  margin-top: 3rem;
+  width: 80%;
+}
+
+.des h2 {
+  color: #000;
+  font-size: 2.2rem;
+  padding-bottom: 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+.des p {
+  color: #747474;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.pill {
+  width: 100%;
+  margin-top: 15rem;
+  height: 10rem;
+}
+
+.pill .pills {
+  border-bottom: 1px solid #000;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.pill .pills li {
+  color: #000;
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+
+.pill li.active {
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 760px) {
+  .parallax {
+    background-attachment: fixed;
+  }
+
+  .white {
+    height: 60vh;
+  }
+
+  .parallax2 {
+    background-attachment: fixed;
+  }
+
+  .contex {
+    top: 6rem;
+    margin-left: 3%;
+    width: 60%;
+    padding: 10rem;
+  }
+
+  .split {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20rem;
+  }
+
+  .split .kep {
+    order: -1;
+    width: 38rem;
+    height: 60rem;
+  }
+
+  .split .text-split {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    margin-inline: auto;
+  }
+
+  .split .text-split h2 {
+    font-size: 3.2rem;
+  }
+
+  .split .text-split p {
+    line-height: 2;
+  }
+
+  .no2 {
+    margin-top: 10rem;
+  }
+
+  .text {
+    position: relative;
+    margin: -8rem auto;
+    padding: 10rem 12rem;
+    width: 95%;
+  }
+
+  .text h2 {
+    font-size: 3.2rem;
+  }
+
+  .text p {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  .ter {
+    margin-top: -25rem;
+    height: 80vh;
+  }
+
+  .gift h3 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gift p {
+    padding: 1.75rem;
+    font-size: 2rem;
+  }
+
+  .fl {
+    display: flex;
+    width: 100%;
+  }
+
+  .leir {
+    flex: 0 0 40%;
+    position: relative;
+    background: #ebe9eb;
+    width: calc(100% - 4rem);
+    padding-left: 7rem;
+    margin-inline: auto;
+    margin-bottom: 100px;
+    padding-right: 20px;
+  }
+
+  .leir .mad {
+    height: 15rem;
+    position: absolute;
+    top: -4rem;
+    left: -4rem;
+  }
+
+  .leir .tropi {
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    top: 4rem;
+    left: -2rem;
+  }
+
+  .leir .inner-leir {
+    padding: 0;
+    padding-left: 3rem;
+  }
+
+  .leir .inner-leir h3 {
+    font-size: 2.8rem;
+    line-height: 1;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+  }
+
+  .leir .inner-leir p {
+    color: #767676;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    line-height: 2;
+  }
+
+  .leir .inner-leir .csom {
+    margin-bottom: 1.5rem;
+  }
+
+  .leir .inner-leir a {
+    font-size: 1rem;
+    color: #7162d2;
+    font-weight: 900;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 25px;
+    line-height: 1;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-transform: uppercase;
+  }
+
+  .leir .inner-leir a .read2 {
+    position: relative;
+    top: 0.3rem;
+    left: 1.5rem;
+    height: 14px;
+    width: 8px;
+  }
+
+  .leir .inner-leir .add {
+    background-color: #8a69d4;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    height: 24px;
+    line-height: normal;
+    border-radius: 24px;
+    text-transform: uppercase;
+  }
+
+  .leir .inner-leir label {
+    font-family: "Rozha One", serif;
+    font-size: 1.9rem;
+    font-weight: bolder;
+  }
+
+  .leir .inner-leir #bor1 {
+    text-align: center;
+    border: none;
+    margin-right: 2rem;
+    width: 3rem;
+    height: 2.4rem;
+  }
+
+  form {
+    padding-bottom: 4rem;
+  }
+
+  .leir2 {
+    flex: 0 0 40%;
+    position: relative;
+    background: #ebe9eb;
+    padding-left: 4rem;
+    margin-inline: auto;
+    margin-bottom: 100px;
+    padding-right: 20px;
+  }
+
+  .leir2 .mad2 {
+    height: 20rem;
+    position: absolute;
+    top: -4rem;
+    left: -4rem;
+  }
+
+  .leir2 .tropi2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 1rem 0;
+    height: 4rem;
+    width: 4rem;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+
+  .leir2 .inner-leir2 {
+    margin-top: -20rem;
+    padding-left: 5rem;
+  }
+
+  .leir2 .inner-leir2 h3 {
+    font-size: 2.8rem;
+    line-height: 1;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .leir2 .inner-leir2 .line {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .leir2 .inner-leir2 p {
+    line-height: 1.5;
+  }
+
+  .vue {
+    display: flex;
+  }
+
+  .carousel {
+    flex: 0 0 50%;
+    margin-top: 0;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel .controls {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+  }
+
+  .carousel .controls .control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    cursor: pointer;
+  }
+
+  .carousel .next {
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .carousel .back {
+    height: 4rem;
+    width: 3rem;
+    transform: rotate(180deg);
+  }
+
+  .carousel .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+  }
+
+  .carousel .slides .slide {
+    min-width: 100%;
+    min-height: 25rem;
+    height: auto;
+  }
+
+  .des {
+    flex: 0 0 40%;
+    margin-inline: auto;
+    margin-top: 6rem;
+  }
+
+  .des h2 {
+    color: #000;
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+  }
+
+  .des p {
+    color: #747474;
+    margin-bottom: 1rem;
+    overflow-x: hidden;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .pill {
+    width: 100%;
+    margin-top: 15rem;
+    height: 10rem;
+  }
+
+  .pill .pills {
+    border-bottom: 1px solid #000;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    text-align: center;
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  .pill .pills li {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .white {
+    height: 35vh;
+  }
+
+  .parallax2 {
+    margin-bottom: 20rem;
+    height: 56vh;
+  }
+
+  .contex {
+    margin-left: 10%;
+    width: 30%;
+  }
+
+  .contex h1 {
+    font-size: 4.4rem;
+  }
+
+  .split .kep {
+    width: 50%;
+  }
+
+  .split .text-split h2 {
+    font-size: 4.4rem;
+  }
+
+  .next-2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+  }
+
+  .no2 {
+    margin-top: 10rem;
+  }
+
+  .text {
+    position: relative;
+    margin: 10rem 0 0 0;
+    margin-left: 15rem;
+    padding: 10rem 12rem;
+    width: 40%;
+    background-color: #8969d4;
+  }
+
+  .text h2 {
+    font-size: 4.4rem;
+  }
+
+  .text p {
+    line-height: 1.7;
+  }
+
+  .ter {
+    margin-top: -35rem;
+    margin-left: auto;
+    width: 75%;
+    height: 50vh;
+  }
+
+  .carousel {
+    flex: 0 0 60%;
+    margin-top: 10rem;
+    height: 60rem;
+  }
+
+  .carousel .controls {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+  }
+
+  .carousel .controls .control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    cursor: pointer;
+  }
+
+  .carousel .next {
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .carousel .back {
+    height: 4rem;
+    width: 3rem;
+    transform: rotate(180deg);
+  }
+
+  .carousel .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+  }
+
+  .carousel .slides .slide {
+    min-width: 100%;
+    min-height: 25rem;
+    height: auto;
+  }
+
+  .des {
+    flex: 0 0 25%;
+    margin-inline: auto;
+    margin-top: 15rem;
+  }
+
+  .des h2 {
+    font-size: 4.4rem;
+  }
+
+  .des p {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+
+  .pill {
+    margin-top: 15rem;
+    height: 10rem;
+  }
+
+  .pill .pills {
+    border-bottom: 1px solid #000;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-inline: auto;
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  .pill .pills li {
+    color: #000;
+    display: block;
+    padding: 2rem 5rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .text {
+    position: relative;
+    margin: 10rem 0 0 0;
+    margin-left: 37rem;
+    padding: 10rem 12rem;
+    width: 30%;
+  }
+
+  .carousel {
+    flex: 0 0 60%;
+    margin-top: 10rem;
+    height: 70rem;
+    margin-left: 0;
+  }
 }
 
 /*hero vége*/

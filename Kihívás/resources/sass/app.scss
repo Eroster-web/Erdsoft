@@ -35,6 +35,44 @@ header{
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+.lang{
+    color: white;
+    display: flex;
+}
+.lang>li>a>ion-icon{
+    margin-right: 1rem;
+}
+.lang>li{
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+.lang a{
+    color:$col;
+}
+.langu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: max-content;
+    height: 90%;
+    p{
+        font-size: 1.4rem;
+        color: $col;
+    }
+    .kos{
+     background-color: #7162d2;
+     width: max-content;
+    color: $col;
+    padding:1rem ;
+    margin-left: 1.5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    transition:padding-bottom 650ms ;}
+}
+.kos:hover{
+    padding-bottom:1.3rem ;
+}
+
 .menu-icons{
     color: white;
     font-size: 5rem;
@@ -46,11 +84,13 @@ header{
     z-index: 1500;
     display: none;
 }
+
 nav{
     width: 100%;
     height: 9.5rem;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 .logo{
     width: 5rem;
@@ -60,9 +100,9 @@ nav{
     margin-bottom: 1rem;
 }
 .nav-list{
+    width: max-content;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 .nav-list li{
     line-height: 4rem;
@@ -82,24 +122,6 @@ nav{
 }
 .nav-list a:hover{
     color:#7162d2;
-}
-.kosar{
-    
-    pointer-events: none;
-}
-
-.badge {
-border: 0.1rem solid white;
-padding: 0.5rem;
-border-radius: 50%;
-}
-.btn{
-
-    cursor: pointer;
-    display: inline-block;
-    background: #7162d2;
-    border: 3px solid #7162d2;
-    transition: transform 450ms;
 }
 .first{
     max-height:100vh;
@@ -126,13 +148,29 @@ li.move-right{
     margin-left: 2rem;
     
 }
-ion-icon{
-    line-height: initial;
-    margin-left: 1rem;
-}
 /*nav css vége*/
 @media screen and (max-width: 950px){
-    
+    .langu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: max-content;
+        height: 90%;
+        p{
+            font-size: 1.4rem;
+            color: $col;
+        }
+        .kos{
+         background-color: #7162d2;
+         width: max-content;
+        color: $col;
+        padding:0 1rem;
+        margin-bottom: 3rem;
+        margin-left: 1.5rem;
+        font-size: 1.4em;
+        text-transform: uppercase;
+    }
+    }
     .nav-list{
         background:black;
         position: fixed;
@@ -142,9 +180,11 @@ ion-icon{
         display: none;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         opacity: 0.8;
         z-index: 1000;
     }
+    
     .nav-list > li{
         line-height: 6rem;
     }
@@ -159,15 +199,13 @@ ion-icon{
         visibility: visible;
         max-height: initial;
     }
-    li.move-right{
-        display: block;
-        margin: 0 auto;
-        line-height: initial;
-    }
     .menu-icons{
         position: absolute;
         top: 10%;
         display: block;
+    }
+    .language{
+        color: white;
     }
     .ion-md-close{
         display: none;
@@ -183,127 +221,6 @@ ion-icon{
     }
 }
 /*hero*/
-
-
-.parallax{
-    height: 73.5vh;
-    width: auto;
-    color: $col;
-    font-size: 4rem;
-    line-height: 3rem;
-    background-image:url(http://localhost:8000/../img/estate-header.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.white{
-    width: 100%;
-    height: 40vh; 
-    position: relative;
-}
-.parallax2{
-    margin-bottom: 20rem;
-    height: 70vh;
-    width: 100%;
-    color: $col;
-    font-size: 4rem;
-    line-height: 3rem;
-    background-image:url(http://localhost:8000/../img/history-parallax.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.contex{
-    position: absolute;
-    top: 15rem;
-    margin-left: 40rem;
-    width: 30%;
-    background:black ;
-    color: $col;
-    padding: 10rem;
-    h1{
-        font-size: 4.4rem;
-        padding-bottom: 1.5rem;
-        display: inline-block;
-        width: auto;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #fff;
-        
-    }
-    h3{
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        line-height: normal;
-    }
-    p{
-        margin-bottom:1rem ;
-        overflow-x: hidden;
-        font-family: 'FortLight';
-        font-size: 1.3rem;
-        line-height: 2;
-    }
-    a{
-     font-family: 'FortBold';
-     font-size: 1.1rem;
-     color: $col;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    }
-}
-
-.split{
-    display: flex;
-    object-fit: cover;
-    margin-bottom: 20rem;
-
-    .text-split{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 18rem;
-    
-        h2{
-            max-width: 21rem;
-            font-size: 4.4rem;
-        padding-bottom: 1.5rem;
-        display: inline-block;
-        width: auto;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #000;
-        }
-        p{
-            max-width: 38rem;
-            margin-bottom:1rem ;
-        color: #767676;
-        font-family: 'FortLight';
-        font-size: 1.3rem;
-        line-height: 2;
-        }
-        a{
-     font-size: 1.3rem;
-     color: #7162d2; //#ffba00;
-     font-weight: 900;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 25px;
-    line-height: 1;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-        }
-    }
-}
-
-
-
-@media screen and (min-width:300px){
     .parallax{
         height: 70vh;
         font-size: 2rem;
@@ -312,16 +229,18 @@ ion-icon{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        color: $col;
         background-attachment: initial;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
     }
     .white{
         width: 100%;
-        height: 100vh; 
+        height: 70vh; 
+        position: relative;
     }
-}
+                
     .parallax2{
         margin-bottom: 8rem;
         height: 70vh;
@@ -382,6 +301,7 @@ ion-icon{
         margin-bottom: 20rem;
     .kep{
         background-image:url(http://localhost:8000/../img/winery.jpg);
+        
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -409,6 +329,7 @@ ion-icon{
             p{
                 margin-bottom:1rem ;
                 overflow-x: hidden;
+                color: #767676;
                 width: auto;
                 font-size: 1.3rem;
                 line-height: 1.6;
@@ -478,7 +399,8 @@ ion-icon{
         background-size: cover;
         height:15rem;
     }
-    .gif{
+    .gift{
+        visibility: hidden;
         width: 100%;
         margin:10rem 0;
         margin-bottom: 10rem;
@@ -675,5 +597,590 @@ ion-icon{
                                             }
             }
     }
+  
 
+
+.carousel {
+    margin-inline: auto;
+margin-top: 10rem;
+  width: 90%;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+
+
+  
+  .controls {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+    
+    .control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      background-color:#000;
+      transition: ease .3s;
+      cursor: pointer;
+    }
+  }
+  .next{
+    height: 4rem;
+    width: 3rem;
+  }
+    .back{
+       height: 4rem;
+       width: 3rem;
+       transform: rotate(180deg); 
+    }
+    .slides {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      transition: 1s ease-in-out all;
+      
+      .slide {
+        min-width: 100%;
+        min-height: 25rem;
+        height: auto;
+      }
+    }
+}
+.des{
+    margin-inline: auto;
+    margin-top: 3rem;
+    width: 80%;
+    h2{
+
+        color: #000;
+        font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+    width: max-content;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+    }
+
+    p{
+        color: #747474;;
+        margin-bottom:1rem ;
+        overflow-x: hidden;
+        text-align: justify;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+}
+.pill{
+   width: 100%;
+    margin-top: 15rem;
+    height: 10rem;
+    .pills{
+    border-bottom:1px solid #000 ;
+    width: max-content;
+
+    flex-wrap: wrap;
+    width: 60%;
+    margin-inline: auto;
+    text-align: center;
+     display: flex;
+     text-transform: uppercase;
+     li{
+         color: #000;
+        display: block;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        
+     }
+    }
+    li.active{
+        font-weight: bolder;
+    }
+}
+@media screen and (min-width:760px){
+    .parallax{
+        background-attachment: fixed;
+    }
+    .white{
+        height: 60vh; 
+    }
+                
+    .parallax2{
+        background-attachment: fixed;
+    }
+    .contex{
+        top: 6rem;
+        margin-left: 3%;
+        width: 60%;
+        padding: 10rem;
+    }
+    .split{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20rem;
+    .kep{
+        order: -1;
+        width: 38rem;
+        height:60rem;
+    }
+        .text-split{
+            display: flex;
+            width: 35%;
+            justify-content: center;
+            flex-direction: column;
+            margin: 1rem ;
+            margin-inline: auto;
+        
+            h2{
+                font-size: 3.2rem;
+            }
+        
+            p{
+               
+                line-height: 2;
+            }
+            
+        }
+    }
+    
+   .no2{
+       margin-top: 10rem;
+   }
+    .text{
+        position: relative;
+        margin: -8rem auto;
+        padding: 10rem 12rem;
+        width: 95%;
+        h2{
+            font-size: 3.2rem;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2;
+        }
+        
+    }
+    .ter{
+        margin-top:-25rem;
+        height:80vh;
+    }
+    .gift{
+       
+        h3{
+         
+        font-size: 4rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        }
+        p{
+            padding: 1.75rem;
+            font-size: 2rem;
+        }
+    }
+    .fl{
+        display: flex;
+        width: 100%;
+    }
+    .leir{
+     
+        .mad{
+            height:15rem;
+            position: absolute;
+            top: -4rem;
+            left: -4rem;
+        }
+        .tropi {
+            display: flex;
+            flex-direction: column;
+            height: 4rem;
+            width: 4rem;
+            position: relative;
+            top: 4rem;
+            left: -2rem;
+            
+        }
+        flex: 0 0 40%;
+        position: relative;
+        background:#ebe9eb;
+        width: calc(100% - 4rem);
+        padding-left: 7rem;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        padding-right: 20px;
+        .inner-leir{
+            padding: 0;
+            padding-left: 3rem;
+            h3{
+                font-size: 2.8rem;
+                line-height: 1;
+                padding-bottom: 2.5rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 1px solid #000;
+              }
+              p{
+                  color:#767676;
+                  font-size: 1.2rem;
+                  letter-spacing: 3px;
+                  line-height: 2;
+              }
+              .csom{
+                margin-bottom: 1.5rem;}
+              a{
+                  font-size: 1rem;
+                  color: #7162d2; //#ffba00;
+                  font-weight: 900;
+                 cursor: pointer;
+                 display: inline-block;
+                 margin-top: 25px;
+                 line-height: 1;
+                 letter-spacing: 3px;
+                 margin-bottom: 15px;
+                 width: max-content;
+                 text-transform: uppercase;
+                 .read2{
+                    position: relative;
+                    top: 0.3rem;
+                    left: 1.5rem;
+                    height: 14px;
+                    width: 8px;
+                            }
+              }
+                            .add{
+                                background-color: #8a69d4;
+                            border: none;
+                            color: #fff;
+                            font-size: 1rem;
+                            text-align: center;
+                            letter-spacing: 2px;
+                            height: 24px;
+                            line-height: normal;
+                            border-radius: 24px;
+                            text-transform: uppercase;
+                                    }
+                                label{
+                                    font-family: $font-family;
+                                    font-size: 1.9rem;
+                                    font-weight: bolder;
+                                        }
+                                    #bor1{
+                                        text-align: center;
+                                        border: none;
+                                        margin-right: 2rem;
+                                        width: 3rem;
+                                        height: 2.4rem;
+                                            }
+            }
+        
+    }
+    form{
+        padding-bottom: 4rem;
+    }
+    .leir2{
+        .mad2{
+            height:20rem;
+            position: absolute;
+            top: -4rem;
+            left: -4rem;
+        }
+        .tropi2 {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 1rem 0;
+            height: 4rem;
+            width: 4rem;
+            top: 0;
+            left: 0;
+            position: relative;
+            
+        }
+    
+        flex: 0 0 40%;
+        position: relative;
+        background:#ebe9eb;
+        padding-left: 4rem;
+        margin-inline: auto;
+        margin-bottom: 100px;
+        padding-right: 20px;
+        .inner-leir2{
+            margin-top: -20rem;
+            padding-left: 5rem;
+            h3{
+                font-size: 2.8rem;
+                line-height: 1;
+                padding-bottom: 0;
+                margin-bottom: 0;
+
+              }
+              .line{
+                padding-bottom: 1.5rem;
+                margin-bottom: 1.5rem;
+                     }
+              p{
+                line-height: 1.5;
+              }
+            }
+          }
+  
+.vue{
+    display: flex;
+}
+
+.carousel {
+    flex: 0 0 50%;
+ margin-top: 0;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  
+  .controls {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+    
+    .control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      background-color:#000;
+      cursor: pointer;
+    }
+  }
+  .next{
+    height: 4rem;
+    width: 3rem;
+  }
+    .back{
+       height: 4rem;
+       width: 3rem;
+       transform: rotate(180deg); 
+    }
+    .slides {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      transition: 1s ease-in-out all;
+      
+      .slide {
+        min-width: 100%;
+        min-height: 25rem;
+        height: auto;
+      }
+    }
+}
+.des{
+    flex: 0 0 40%;
+    margin-inline: auto;
+    margin-top: 6rem;
+    h2{
+        color: #000;
+        font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+    width: max-content;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+    }
+
+    p{
+        color: #747474;;
+        margin-bottom:1rem ;
+        overflow-x: hidden;
+        text-align: justify;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+}
+    .pill{
+    width: 100%;
+     margin-top: 15rem;
+     height: 10rem;
+     .pills{
+     border-bottom:1px solid #000 ;
+     width: max-content;
+     flex-wrap: wrap;
+     margin-inline: auto;
+     text-align: center;
+      display: flex;
+      text-transform: uppercase;
+      li{
+         padding: 1rem;
+
+      }
+     }
+    } 
+}
+@media screen and (min-width:990px){
+    .white{
+        height: 35vh;
+    }
+    .parallax2{
+        margin-bottom: 20rem;
+        height: 56vh;
+    }
+        
+    .contex{
+        margin-left: 10%;
+        width: 30%;
+        h1{
+            font-size: 4.4rem;
+        }
+    }
+    .split{
+    .kep{
+        width: 50%;
+        }
+        .text-split{
+            h2{
+                font-size: 4.4rem;
+            }
+                    }
+    }
+    .next-2{
+        width: max-content;
+        position: relative;
+    }
+  
+   .no2{
+       margin-top: 10rem;
+   }
+    .text{
+        position: relative;
+        margin: 10rem 0 0 0; 
+        margin-left: 15rem;
+        padding: 10rem 12rem;
+        width: 40%;
+        h2{
+            font-size: 4.4rem;  
+        } 
+        p{
+            line-height: 1.7;
+        }
+        
+        background-color:#8969d4 ;
+    }
+    .ter{
+        margin-top: -35rem;
+        margin-left: auto;
+       width: 75%;
+        height: 50vh;
+    }
+    .carousel {
+        flex: 0 0 60%;
+     margin-top: 10rem;
+      height: 60rem;
+    
+    
+      
+      .controls {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 99999;
+        transition: all ease 0.5s;
+        
+        .control {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          width: 40px;
+          background-color:#000;
+          cursor: pointer;
+        }
+      }
+      .next{
+        height: 4rem;
+        width: 3rem;
+      }
+        .back{
+           height: 4rem;
+           width: 3rem;
+           transform: rotate(180deg); 
+        }
+        .slides {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          display: flex;
+          width: 100%;
+          transition: 1s ease-in-out all;
+          
+          .slide {
+            min-width: 100%;
+            min-height: 25rem;
+            height: auto;
+          }
+        }
+    }
+    .des{
+        flex: 0 0 25%;
+        margin-inline: auto;
+        margin-top: 15rem;
+        h2{
+            font-size: 4.4rem;
+        }
+        p{
+            font-size: 1.3rem;
+            line-height: 2;
+        }
+    }
+    .pill{
+        margin-top: 15rem;
+        height: 10rem;
+        .pills{
+        border-bottom:1px solid #000 ;
+        width: max-content;
+        margin-inline: auto;
+         display: flex;
+         text-transform: uppercase;
+         li{
+             color: #000;
+            display: block;
+            padding: 2rem 5rem;
+            font-size: 1.6rem;
+            
+         }
+        }
+        
+    }
+}
+@media screen and(min-width:1300px) {
+    .text{
+        position: relative;
+        margin: 10rem 0 0 0; 
+        margin-left: 37rem;
+        padding: 10rem 12rem;
+        width: 30%;
+
+    }
+    .carousel {
+        
+        flex: 0 0 60%;
+     margin-top: 10rem;
+      height: 70rem;
+      margin-left: 0;
+    }
+}
 /*hero vége*/
