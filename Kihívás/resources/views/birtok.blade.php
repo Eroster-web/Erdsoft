@@ -134,7 +134,7 @@
   <div class="vue">
 <div class="carousel">
   <div class="slides">
-  
+  <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya2" class="slide">
     <img src="{{ asset('img/uragya02.jpg') }}" alt="uragya2" class="slide">
     <img src="{{ asset('img/uragya03.jpg') }}" alt="uragya3" class="slide">
     <img src="{{ asset('img/uragya04.jpg') }}" alt="uragya4" class="slide">

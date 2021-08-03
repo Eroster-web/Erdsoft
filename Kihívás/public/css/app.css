@@ -287,7 +287,7 @@ li.move-right {
   height: 70vh;
   font-size: 2rem;
   line-height: 3rem;
-  background-image: url(http://localhost:8000/../img/estate-header.jpg);
+  background-image: url(/images/estate-header.jpg?e9035decf6c49094ed539d66ad685c30);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -311,7 +311,7 @@ li.move-right {
   color: white;
   font-size: 4rem;
   line-height: 3rem;
-  background-image: url(http://localhost:8000/../img/history-parallax.jpg);
+  background-image: url(/images/history-parallax.jpg?4b58380609505610313995a5356e82ee);
   background-attachment: initial;
   background-position: center;
   background-repeat: no-repeat;
@@ -372,7 +372,7 @@ li.move-right {
 }
 
 .split .kep {
-  background-image: url(http://localhost:8000/../img/winery.jpg);
+  background-image: url(/images/winery.jpg?c4dd8ef5d6ad55ebac76ec14cd2b3a31);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -473,7 +473,7 @@ li.move-right {
 }
 
 .ter {
-  background-image: url(http://localhost:8000/../img/territory.jpg);
+  background-image: url(/images/territory.jpg?c4f764885ab437df5cb10bc684108b39);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -578,6 +578,10 @@ li.move-right {
   left: 1.5rem;
   height: 14px;
   width: 8px;
+}
+
+.leir .inner-leir .vue {
+  margin-top: 10rem;
 }
 
 .leir .inner-leir .add {
@@ -720,7 +724,7 @@ li.move-right {
   left: 0;
   justify-content: space-between;
   width: 100%;
-  z-index: 99999;
+  z-index: 99;
   transition: all ease 0.5s;
 }
 
@@ -790,8 +794,8 @@ li.move-right {
 
 .pill {
   width: 100%;
-  margin-top: 15rem;
-  height: 10rem;
+  margin-top: 5rem;
+  height: 20rem;
 }
 
 .pill .pills {
@@ -799,6 +803,7 @@ li.move-right {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  display: block;
   flex-wrap: wrap;
   width: 60%;
   margin-inline: auto;
@@ -1180,7 +1185,7 @@ li.move-right {
 
 @media screen and (min-width: 990px) {
   .white {
-    height: 35vh;
+    height: 55vh;
   }
 
   .white h1 {
@@ -1194,7 +1199,7 @@ li.move-right {
 
   .contex {
     margin-left: 10%;
-    width: 30%;
+    width: 40%;
   }
 
   .contex h1 {
@@ -1241,7 +1246,7 @@ li.move-right {
     margin-top: -35rem;
     margin-left: auto;
     width: 75%;
-    height: 50vh;
+    height: 50rem;
   }
 
   .carousel {
@@ -1336,24 +1341,75 @@ li.move-right {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1360px) {
+  .parallax {
+    height: 80vh;
+  }
+
   .parallax h1 {
     font-size: 5rem;
+  }
+
+  .parallax2 {
+    height: 80vh;
+  }
+
+  .white {
+    height: 50rem;
+  }
+
+  .contex {
+    position: absolute;
+    top: 6rem;
+    width: 30%;
+    background: black;
+    color: white;
   }
 
   .text {
     position: relative;
     margin: 10rem 0 0 0;
-    margin-left: 37rem;
+    bottom: 5rem;
+    margin-left: 21rem;
     padding: 10rem 12rem;
-    width: 30%;
+    width: 35%;
+  }
+
+  .ter {
+    height: 45rem;
+    z-index: -20;
+    position: relative;
   }
 
   .carousel {
-    flex: 0 0 60%;
+    margin-inline: auto;
     margin-top: 10rem;
-    height: 70rem;
-    margin-left: 0;
+    width: 90%;
+    height: 50rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .pill {
+    margin-top: 15rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .contex {
+    top: 13rem;
+  }
+
+  .contex h3 {
+    font-size: 2rem;
+  }
+
+  .contex p {
+    line-height: 2;
+  }
+
+  .text {
+    margin-left: 28rem;
   }
 }
 
