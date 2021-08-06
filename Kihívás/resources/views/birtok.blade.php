@@ -134,8 +134,6 @@
     </div>
 
     <div class="content">
-
-
     <div v-if="activetab === 1" class="tabcontent">
         <div class="vue">
     <div class="carousel">
