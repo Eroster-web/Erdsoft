@@ -143,7 +143,7 @@
     <img src="{{ asset('img/betsek5.jpg') }}" alt="uragya2" class="slide">
     <img src="{{ asset('img/betsek6.jpg') }}" alt="uragya2" class="slide">
           </div>
-        <div class="controls">
+          <div class="controls">
     <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
     <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
            </div>
@@ -163,10 +163,6 @@
     <img src="{{ asset('img/holdvolgy03.jpg') }}" alt="uragya2" class="slide">
     <img src="{{ asset('img/holdvolgy04.jpg') }}" alt="uragya2" class="slide">
           </div>
-        <div class="controls">
-    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-           </div>
           </div>
 <div class="des">
 <h2>Holdvölgy</h2>
@@ -181,10 +177,6 @@
        <div class="slides">
     <img src="{{ asset('img/kiraly01.jpg') }}" alt="uragya2" class="slide">
           </div>
-        <div class="controls">
-    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-           </div>
           </div>
 <div class="des">
 <h2>Király</h2>
@@ -198,10 +190,6 @@
        <div class="slides">
     <img src="{{ asset('img/bomboly01.jpg') }}" alt="uragya2" class="slide">
           </div>
-        <div class="controls">
-    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-           </div>
           </div>
 <div class="des">
 <h2>Bomboly</h2>
@@ -215,10 +203,6 @@
        <div class="slides">
     <img src="{{ asset('img/tamas04.jpg') }}" alt="uragya2" class="slide">
           </div>
-        <div class="controls">
-    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-           </div>
           </div>
 <div class="des">
 <h2>Szent-Tamás</h2>
@@ -234,10 +218,6 @@
     
   
           </div>
-        <div class="controls">
-    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-           </div>
           </div>
 <div class="des">
 <h2>Veres</h2>
@@ -250,13 +230,7 @@
     <div class="carousel">
        <div class="slides">
     <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya2" class="slide">
-    
-  
           </div>
-        <div class="controls">
-    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-           </div>
           </div>
 <div class="des">
 <h2>Úrágya</h2>
