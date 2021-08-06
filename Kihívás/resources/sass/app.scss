@@ -246,13 +246,13 @@ display: flex;
 }
 /* Style the tabs */
 .tabs {
-    flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-  margin-bottom: 5rem;
-  margin-inline: auto;
-  width: max-content;
-  border-bottom: 1px solid black;
+flex-wrap: wrap;
+justify-content: center;
+display: flex;
+margin-bottom: 5rem;
+margin-inline: auto;
+text-transform: uppercase;
+border-bottom: 1px solid black;
 }
 
 .tabs ul {
@@ -1036,7 +1036,6 @@ font-size: 1.2rem;
 line-height: 1.6;
 }
 }
-
 }
 @media screen and (min-width:990px){
 .white{
@@ -1215,7 +1214,9 @@ color: $col;
         }
         }
     }
-    
+    .tabs{
+        width: max-content;
+    }
 }
 @media screen and (min-width:1800px) {
     .contex{

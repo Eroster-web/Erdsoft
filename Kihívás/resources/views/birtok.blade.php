@@ -132,7 +132,6 @@
         <a v-on:click="activetab=7" v-bind:class="[ activetab === 7 ? 'active' : '' ]">Úrágya</a>
 
     </div>
-
     <div class="content">
     <div v-if="activetab === 1" class="tabcontent">
         <div class="vue">
@@ -160,6 +159,9 @@
     <div class="carousel">
        <div class="slides">
     <img src="{{ asset('img/holdvolgy02.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/holdvolgy01.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/holdvolgy03.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/holdvolgy04.jpg') }}" alt="uragya2" class="slide">
           </div>
         <div class="controls">
     <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>

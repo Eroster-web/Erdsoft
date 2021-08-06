@@ -295,9 +295,7 @@ li.move-right {
   display: flex;
   margin-bottom: 5rem;
   margin-inline: auto;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  text-transform: uppercase;
   border-bottom: 1px solid black;
 }
 
@@ -1375,6 +1373,12 @@ li.move-right {
     min-width: 100%;
     min-height: 45rem;
     height: auto;
+  }
+
+  .tabs {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 
