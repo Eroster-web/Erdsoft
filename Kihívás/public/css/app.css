@@ -21,7 +21,7 @@ body {
 .sticky {
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 9999999;
   width: 100%;
 }
 
@@ -281,6 +281,137 @@ li.move-right {
   nav.active .nav-list {
     display: flex;
   }
+}
+
+.containerr {
+  margin-top: 6rem;
+}
+
+/* Style the tabs */
+
+.tabs {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5rem;
+  margin-inline: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-bottom: 1px solid black;
+}
+
+.tabs ul {
+  list-style-type: none;
+}
+
+.tabs a {
+  padding: 1rem 2.5rem;
+  font-size: 1.8rem;
+}
+
+/* Change background color of tabs on hover */
+
+.tabs a:hover {
+  color: #ffba00;
+}
+
+/* Styling for active tab */
+
+.tabs a.active {
+  color: #000;
+  font-weight: bolder;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+  width: 90%;
+  display: flex;
+}
+
+.carousel {
+  margin-inline: auto;
+  margin-top: 10rem;
+  width: 90%;
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .controls {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+  transition: all ease 0.5s;
+}
+
+.carousel .controls .control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.carousel .next {
+  height: 4rem;
+  width: 3rem;
+}
+
+.carousel .back {
+  height: 4rem;
+  width: 3rem;
+  transform: rotate(180deg);
+}
+
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}
+
+.carousel .slides .slide {
+  min-width: 100%;
+  min-height: 35rem;
+  height: auto;
+}
+
+.des {
+  margin-inline: auto;
+  margin-top: 3rem;
+  width: 80%;
+}
+
+.des h2 {
+  color: #000;
+  font-size: 2.2rem;
+  padding-bottom: 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #000;
+}
+
+.des p {
+  color: #747474;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .parallax {
@@ -708,121 +839,6 @@ li.move-right {
   height: 2.4rem;
 }
 
-.carousel {
-  margin-inline: auto;
-  margin-top: 10rem;
-  width: 90%;
-  height: 30rem;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel .controls {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 99;
-  transition: all ease 0.5s;
-}
-
-.carousel .controls .control {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  background-color: #000;
-  transition: ease 0.3s;
-  cursor: pointer;
-}
-
-.carousel .next {
-  height: 4rem;
-  width: 3rem;
-}
-
-.carousel .back {
-  height: 4rem;
-  width: 3rem;
-  transform: rotate(180deg);
-}
-
-.carousel .slides {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  width: 100%;
-  transition: 1s ease-in-out all;
-}
-
-.carousel .slides .slide {
-  min-width: 100%;
-  min-height: 25rem;
-  height: auto;
-}
-
-.des {
-  margin-inline: auto;
-  margin-top: 3rem;
-  width: 80%;
-}
-
-.des h2 {
-  color: #000;
-  font-size: 2.2rem;
-  padding-bottom: 1.5rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #000;
-}
-
-.des p {
-  color: #747474;
-  margin-bottom: 1rem;
-  overflow-x: hidden;
-  text-align: justify;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-.pill {
-  width: 100%;
-  margin-top: 5rem;
-  height: 20rem;
-}
-
-.pill .pills {
-  border-bottom: 1px solid #000;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: block;
-  flex-wrap: wrap;
-  width: 60%;
-  margin-inline: auto;
-  text-align: center;
-  display: flex;
-  text-transform: uppercase;
-}
-
-.pill .pills li {
-  color: #000;
-  display: block;
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
-}
-
-.pill li.active {
-  font-weight: bolder;
-}
-
 @media screen and (min-width: 760px) {
   .parallax {
     background-attachment: fixed;
@@ -913,6 +929,7 @@ li.move-right {
   }
 
   .fl {
+    margin-top: 10rem;
     display: flex;
     width: 100%;
   }
@@ -1129,9 +1146,8 @@ li.move-right {
   }
 
   .carousel .slides .slide {
-    min-width: 100%;
-    min-height: 25rem;
-    height: auto;
+    width: 50%;
+    height: 25rem;
   }
 
   .des {
@@ -1141,6 +1157,7 @@ li.move-right {
   }
 
   .des h2 {
+    font-family: "Rozha One", serif;
     color: #000;
     font-size: 2.2rem;
     padding-bottom: 1.5rem;
@@ -1158,28 +1175,6 @@ li.move-right {
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.6;
-  }
-
-  .pill {
-    width: 100%;
-    margin-top: 15rem;
-    height: 10rem;
-  }
-
-  .pill .pills {
-    border-bottom: 1px solid #000;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    flex-wrap: wrap;
-    margin-inline: auto;
-    text-align: center;
-    display: flex;
-    text-transform: uppercase;
-  }
-
-  .pill .pills li {
-    padding: 1rem;
   }
 }
 
@@ -1298,9 +1293,8 @@ li.move-right {
   }
 
   .carousel .slides .slide {
-    min-width: 100%;
-    min-height: 25rem;
-    height: auto;
+    width: 100%;
+    height: 25rem;
   }
 
   .des {
@@ -1316,28 +1310,6 @@ li.move-right {
   .des p {
     font-size: 1.3rem;
     line-height: 2;
-  }
-
-  .pill {
-    margin-top: 15rem;
-    height: 10rem;
-  }
-
-  .pill .pills {
-    border-bottom: 1px solid #000;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin-inline: auto;
-    display: flex;
-    text-transform: uppercase;
-  }
-
-  .pill .pills li {
-    color: #000;
-    display: block;
-    padding: 2rem 3rem;
-    font-size: 1.6rem;
   }
 }
 
@@ -1390,8 +1362,19 @@ li.move-right {
     position: relative;
   }
 
-  .pill {
-    margin-top: 15rem;
+  .carousel .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+  }
+
+  .carousel .slides .slide {
+    min-width: 100%;
+    min-height: 45rem;
+    height: auto;
   }
 }
 
@@ -1410,6 +1393,25 @@ li.move-right {
 
   .text {
     margin-left: 28rem;
+  }
+
+  .bet {
+    display: none;
+  }
+
+  .carousel .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+  }
+
+  .carousel .slides .slide {
+    min-width: 100%;
+    min-height: 65rem;
+    height: auto;
   }
 }
 

@@ -12652,7 +12652,13 @@ __webpack_require__.r(__webpack_exports__);
 //carousel global import//
 
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_carousel__WEBPACK_IMPORTED_MODULE_1___default.a); //slider//
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_carousel__WEBPACK_IMPORTED_MODULE_1___default.a);
+new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
+  el: '#tabs',
+  data: {
+    activetab: 1
+  }
+}); //slider//
 
 var slides = document.querySelector(".slides");
 var slidesCount = slides.childElementCount;
@@ -12694,12 +12700,7 @@ document.querySelector(".prev-slide").addEventListener("click", function () {
     showdiv();
   }
 }); //class active//
-
-var selector = '.pills li';
-$(selector).on('click', function () {
-  $(selector).removeClass('active');
-  $(this).addClass('active');
-}); //nav nyitás/csukás//
+//nav nyitás/csukás//
 
 var selectElemnt = function selectElemnt(element) {
   return document.querySelector(element);
