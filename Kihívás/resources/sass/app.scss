@@ -693,33 +693,6 @@ font-size: 1.2rem;
 line-height: 1.6;
 }
 }
-
-.pill{
-width: 100%;
-margin-top: 5rem;
-height: 20rem;
-.pills{
-border-bottom:1px solid #000 ;
-width: max-content;
-display: block;
-flex-wrap: wrap;
-width: 60%;
-margin-inline: auto;
-text-align: center;
-display: flex;
-text-transform: uppercase;
-li{
-color: #000;
-display: block;
-padding: 1rem 2rem;
-font-size: 1.6rem;
-
-}
-}
-li.active{
-font-weight: bolder;
-}
-}
 @media screen and (min-width:760px){
 .parallax{
 background-attachment: fixed;
