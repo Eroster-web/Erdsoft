@@ -2,6 +2,13 @@
 import Vue from 'vue';
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
+
+new Vue({
+  el: '#tabs',
+  data: { activetab: 1 },
+});
+
+
 //slider//
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
@@ -41,14 +48,6 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
 
 
 //class active//
-var selector = '.pills li';
-
-$(selector).on('click', function(){
-    $(selector).removeClass('active');
-    $(this).addClass('active');
-});
-
-
 
 //nav nyitás/csukás//
 const selectElemnt = (element) => document.querySelector(element)
@@ -70,12 +69,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-
-$(document).ready(function(){
-  $(".pills li").click(function(){
-    $(".vue").hide();
-  });
-
-});
-

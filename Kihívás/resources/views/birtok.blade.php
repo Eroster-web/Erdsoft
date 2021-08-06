@@ -120,26 +120,138 @@
 
 <!--A view js-->
 <section>
-  <div class="pill">
-    <ul class="pills">
-      <li >BETSEK</li>
-      <li >HOLDVÖLGY</li>
-      <li >KIRÁLY</li>
-      <li >BOMBOLY</li>
-      <li ">SZENT-TAMÁS</li>
-      <li >Veres</li>
-      <li  class="active">Úrágya</li>
-    </ul>
-  </div>
-  <div class="vue">
+<div id="tabs" class="containerr">
+  
+    <div class="tabs">
+        <a v-on:click="activetab=1" v-bind:class="[ activetab === 1 ? 'active' : '' ]">Betsek</a>
+        <a v-on:click="activetab=2" v-bind:class="[ activetab === 2 ? 'active' : '' ]">HOLDVÖLGY</a>
+        <a v-on:click="activetab=3" v-bind:class="[ activetab === 3 ? 'active' : '' ]">KIRÁLY</a>
+        <a v-on:click="activetab=4" v-bind:class="[ activetab === 4 ? 'active' : '' ]">BOMBOLY</a>
+        <a v-on:click="activetab=5" v-bind:class="[ activetab === 5 ? 'active' : '' ]">SZENT-TAMÁS</a>
+        <a v-on:click="activetab=6" v-bind:class="[ activetab === 6 ? 'active' : '' ]">Veres</a>
+        <a v-on:click="activetab=7" v-bind:class="[ activetab === 7 ? 'active' : '' ]">Úrágya</a>
+
+    </div>
+
+    <div class="content">
+
+
+    <div v-if="activetab === 1" class="tabcontent">
+        <div class="vue">
     <div class="carousel">
        <div class="slides">
-    <img src="{{ asset('img/uragya01.jpg') }}"data-filter="uragya" alt="uragya2" class="slide">
-    <img src="{{ asset('img/uragya02.jpg') }}"data-filter="uragya" alt="uragya2" class="slide">
-    <img src="{{ asset('img/uragya03.jpg') }}"data-filter="uragya" alt="uragya3" class="slide">
-    <img src="{{ asset('img/uragya04.jpg') }}"data-filter="uragya" alt="uragya4" class="slide">
-    <img src="{{ asset('img/uragya05.jpg') }}"data-filter="uragya" alt="uragya5" class="slide">
-    <img src="{{ asset('img/uragya06.jpg') }}"data-filter="uragya" alt="uragya6" class="slide">
+    <img src="{{ asset('img/betsek3.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/betsek2.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/betsek4.jpg') }}" alt="uragya3" class="slide">
+    <img src="{{ asset('img/betsek5.jpg') }}" alt="uragya2" class="slide">
+    <img src="{{ asset('img/betsek6.jpg') }}" alt="uragya2" class="slide">
+          </div>
+        <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+           </div>
+          </div>
+<div class="des">
+<h2>Betsek</h2>
+<p>A festői szépségű Holdvölgy dűlőben 3,2 hektáron 2,4 m x 0,9 m-es térállású szőlő található – ezen a helyen több kis parcellából áll össze az ültetvény, ezért különböző korú és a Furmint fajtáján belül is különböző alfajták termesztünk a területen, többek közt a T 85-öset, a madárkást vagy a hólyagosat. Ennek a rendhagyó körülménynek köszönhetően nagyon érdekes a Holdvölgy dűlőhöz köthető ízvilág és komplexitás. A talaj vörösagyag és kvarc tartalmú kőzet keveréke – szőlősorok pedig egy lankás dombon, 300 méter hosszúságban terülnek el. Egyes helyeken hidrokvarcit képződés mutatkozik, amely nagy mértékű hidrotermás vulkáni munkára utal.</p>
+</div>
+</div>
+ </div>
+
+        <div v-if="activetab === 2" class="tabcontent">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/holdvolgy02.jpg') }}" alt="uragya2" class="slide">
+          </div>
+        <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+           </div>
+          </div>
+<div class="des">
+<h2>Holdvölgy</h2>
+<p>A Mád nyugati részén található Úrágya dűlő 0,6 hektáron 2,6 m x 1 m-es térállású területen folytatunk szőlőtermesztést. Furmint és hárslevelű fajta összetétellel rendelkezik az a térség, ahol ernyős művelésmódban termelünk a sűrű lombozat kifejlődésének elkerüléséért. A talaj pincészetünk legkövesebb területe, vörösagyag és riolittufa keveréke. Az egri Eszterházy Károly Egyetem fúrásokat végzett a területen, melynek során - 20 m mélységig hatolva - 11 talajréteget érintettek. Mindez jól példázza, milyen változatos az altalaj ebben az termő közegben, amelyet a szőlő a gyökérzetén keresztül képes megjeleníteni a szőlőbogyóban. A belőle készülő bor rendkívül testes és komplex, köszönhetően a gazdag ásványos termőtalajnak. A szőlőterületet úgynevezett kőbástyák ölelik körül, így - hangulatán kívül - mikroklímája is egyedülálló.</p>
+</div>
+</div>
+        </div>
+        
+        <div v-if="activetab === 3" class="tabcontent">
+        <div class="vue">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/kiraly01.jpg') }}" alt="uragya2" class="slide">
+          </div>
+        <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+           </div>
+          </div>
+<div class="des">
+<h2>Király</h2>
+<p>A történelmi múltú Király dűlőben 3 hektáros összefüggő szőlőterület található, 2,4 m x 0,9 m-es térállással. A parcella 1 hektár furmint, 1 hektár hárslevelű és 1 hektár sárgamuskotály szőlőfajtának ad otthont. Mád legmagasabb vulkanikus hegyének derekán található az impozáns ültetvény, melynek talajában riolittufa és agyag keveréke található. A 25 éves múltra visszatekintő szőlőtőkék gyökérzete az utóbbi időben kezdi elérni azt az ideális nagyságot és mélységet, ahonnan a talajban megbújó ásványoknak köszönhetően nagyon komplex szőlőbogyót tud érlelni.</p></div>
+</div>
+        </div>
+
+        <div v-if="activetab === 4" class="tabcontent">
+        <div class="vue">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/bomboly01.jpg') }}" alt="uragya2" class="slide">
+          </div>
+        <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+           </div>
+          </div>
+<div class="des">
+<h2>Bomboly</h2>
+<p>A délnyugati fekvésű, szépséges Bomboly dűlőben 6 hektár 2,4 m x 1 m-es ültetvény található. A fajta összetételeknek, a vulkanikus talajnak és a tőkék korának köszönhetően az egyik legegyedibb területen találhatjuk magunkat. Mintegy 1,2 hektárt 2018-ban újra telepítettünk 100% furmint fajtával - a dűlőben található a legöregebb ültetvényünk, maguk a 102 éves furmint tőkék. A rendkívül meredek, hosszan elnyúló 300 m-es sorok a hegy tetejétől, egészen a völgy aljáig húzódnak, ennek köszönhetően a völgy párája minden évben nagyobb botritizálódást, aszútermést eredményez. Ebből az adottságból következően születhetnek a területről származó száraz, édes szamorodni és aszú boraink.</p></div>
+</div>
+        </div>
+       
+        <div v-if="activetab === 5" class="tabcontent">
+        <div class="vue">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/tamas04.jpg') }}" alt="uragya2" class="slide">
+          </div>
+        <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+           </div>
+          </div>
+<div class="des">
+<h2>Szent-Tamás</h2>
+<p>Mád egyik legkomplexebb ásványi anyag összetételű dűlőjében, a Szent Tamás Dűlőben 0,4 hektár 2,4 m x 1 m-es térállású ültetvényünk található. A régmúltba visszatekintő, 1962-es ültetés ellenére 98 %-ban eredeti furmint és hárslevelű tőkékkel rendelkezik a terület. A talaj felső rétege vörösagyag, amely 3 m vastagságban helyezkedik el a felszínen és az ezt követő altalaj pedig egybefüggő zeolit réteg. A sorokon végigsétálva az öreg tőkékre jellemző nyugodtság hatása érzékelhető - apró laza fürtök, vékonyabb hajtások jellemzőek ezen a különleges termőterületen.</p></div>
+</div>
+        </div>
+       
+        <div v-if="activetab === 6" class="tabcontent">
+        <div class="vue">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/veres01.jpg') }}" alt="uragya2" class="slide">
+    
+  
+          </div>
+        <div class="controls">
+    <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+    <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+           </div>
+          </div>
+<div class="des">
+<h2>Veres</h2>
+<p>A magas talajminőségű Veres dűlőben 1,4 hektáron 2,6 m x 1 m-es térállású szőlő ültetvénnyel rendelkezünk. Tőkéink 35 évesek - furmint és hárslevelű fajtaösszetétellel dolgozunk. A Veres dűlőt 100%-ban az édes szamorodni és aszú borok alapboraiba használjuk ezért a madarak dézsmálása ellen hálózzuk a területet, így óvjuk az egyedülálló termést. A szüretet novemberben kezdjük az ültetvényen, amelynek termése kimagaslóan botritizálódik, aszúsodik a tufának és a vörösagyag vízmegtartó képességének köszönhetően.</p></div>
+</div>
+        </div>
+
+        <div v-if="activetab === 7" class="tabcontent">
+        <div class="vue">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya2" class="slide">
+    
+  
           </div>
         <div class="controls">
     <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
@@ -148,8 +260,12 @@
           </div>
 <div class="des">
 <h2>Úrágya</h2>
-<p>A Mád nyugati részén található Úrágya dűlő 0,6 hektáron 2,6 m x 1 m-es térállású területen folytatunk szőlőtermesztést. Furmint és hárslevelű fajta összetétellel rendelkezik az a térség, ahol ernyős művelésmódban termelünk a sűrű lombozat kifejlődésének elkerüléséért. A talaj pincészetünk legkövesebb területe, vörösagyag és riolittufa keveréke. Az egri Eszterházy Károly Egyetem fúrásokat végzett a területen, melynek során - 20 m mélységig hatolva - 11 talajréteget érintettek. Mindez jól példázza, milyen változatos az altalaj ebben az termő közegben, amelyet a szőlő a gyökérzetén keresztül képes megjeleníteni a szőlőbogyóban. A belőle készülő bor rendkívül testes és komplex, köszönhetően a gazdag ásványos termőtalajnak. A szőlőterületet úgynevezett kőbástyák ölelik körül, így - hangulatán kívül - mikroklímája is egyedülálló.</p>
+<p>A Mád nyugati részén található Úrágya dűlő 0,6 hektáron 2,6 m x 1 m-es térállású területen folytatunk szőlőtermesztést. Furmint és hárslevelű fajta összetétellel rendelkezik az a térség, ahol ernyős művelésmódban termelünk a sűrű lombozat kifejlődésének elkerüléséért. A talaj pincészetünk legkövesebb területe, vörösagyag és riolittufa keveréke. Az egri Eszterházy Károly Egyetem fúrásokat végzett a területen, melynek során - 20 m mélységig hatolva - 11 talajréteget érintettek. Mindez jól példázza, milyen változatos az altalaj ebben az termő közegben, amelyet a szőlő a gyökérzetén keresztül képes megjeleníteni a szőlőbogyóban. A belőle készülő bor rendkívül testes és komplex, köszönhetően a gazdag ásványos termőtalajnak. A szőlőterületet úgynevezett kőbástyák ölelik körül, így - hangulatán kívül - mikroklímája is egyedülálló.</p></div>
 </div>
+        </div>
+
+
+
 </div>
 </section>
 <!--View js vége-->
