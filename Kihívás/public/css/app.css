@@ -21,7 +21,7 @@ body {
 .sticky {
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 9999999;
   width: 100%;
 }
 
@@ -1410,6 +1410,10 @@ li.move-right {
 
   .text {
     margin-left: 28rem;
+  }
+
+  .bet {
+    display: none;
   }
 }
 

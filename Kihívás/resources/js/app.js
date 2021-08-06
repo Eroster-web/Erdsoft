@@ -70,3 +70,12 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+$(document).ready(function(){
+  $(".pills li").click(function(){
+    $(".vue").hide();
+  });
+
+});
+

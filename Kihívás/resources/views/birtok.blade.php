@@ -122,30 +122,30 @@
 <section>
   <div class="pill">
     <ul class="pills">
-      <li id="bet">BETSEK</li>
-      <li id="hol">HOLDVÖLGY</li>
-      <li id="kir">KIRÁLY</li>
-      <li id="bom">BOMBOLY</li>
-      <li id="szen">SZENT-TAMÁS</li>
-      <li id="ver">Veres</li>
-      <li class="active" id="úrá">Úrágya</li>
+      <li >BETSEK</li>
+      <li >HOLDVÖLGY</li>
+      <li >KIRÁLY</li>
+      <li >BOMBOLY</li>
+      <li ">SZENT-TAMÁS</li>
+      <li >Veres</li>
+      <li  class="active">Úrágya</li>
     </ul>
   </div>
   <div class="vue">
-<div class="carousel">
-  <div class="slides">
-  <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya2" class="slide">
-    <img src="{{ asset('img/uragya02.jpg') }}" alt="uragya2" class="slide">
-    <img src="{{ asset('img/uragya03.jpg') }}" alt="uragya3" class="slide">
-    <img src="{{ asset('img/uragya04.jpg') }}" alt="uragya4" class="slide">
-    <img src="{{ asset('img/uragya05.jpg') }}" alt="uragya5" class="slide">
-    <img src="{{ asset('img/uragya06.jpg') }}" alt="uragya6" class="slide">
-  </div>
-  <div class="controls">
+    <div class="carousel">
+       <div class="slides">
+    <img src="{{ asset('img/uragya01.jpg') }}"data-filter="uragya" alt="uragya2" class="slide">
+    <img src="{{ asset('img/uragya02.jpg') }}"data-filter="uragya" alt="uragya2" class="slide">
+    <img src="{{ asset('img/uragya03.jpg') }}"data-filter="uragya" alt="uragya3" class="slide">
+    <img src="{{ asset('img/uragya04.jpg') }}"data-filter="uragya" alt="uragya4" class="slide">
+    <img src="{{ asset('img/uragya05.jpg') }}"data-filter="uragya" alt="uragya5" class="slide">
+    <img src="{{ asset('img/uragya06.jpg') }}"data-filter="uragya" alt="uragya6" class="slide">
+          </div>
+        <div class="controls">
     <div class="control prev-slide"><img class="back" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
     <div class="control next-slide"><img class="next" src="{{ asset('img/readmore-arrow-white.png') }}"></div>
-  </div>
-</div>
+           </div>
+          </div>
 <div class="des">
 <h2>Úrágya</h2>
 <p>A Mád nyugati részén található Úrágya dűlő 0,6 hektáron 2,6 m x 1 m-es térállású területen folytatunk szőlőtermesztést. Furmint és hárslevelű fajta összetétellel rendelkezik az a térség, ahol ernyős művelésmódban termelünk a sűrű lombozat kifejlődésének elkerüléséért. A talaj pincészetünk legkövesebb területe, vörösagyag és riolittufa keveréke. Az egri Eszterházy Károly Egyetem fúrásokat végzett a területen, melynek során - 20 m mélységig hatolva - 11 talajréteget érintettek. Mindez jól példázza, milyen változatos az altalaj ebben az termő közegben, amelyet a szőlő a gyökérzetén keresztül képes megjeleníteni a szőlőbogyóban. A belőle készülő bor rendkívül testes és komplex, köszönhetően a gazdag ásványos termőtalajnak. A szőlőterületet úgynevezett kőbástyák ölelik körül, így - hangulatán kívül - mikroklímája is egyedülálló.</p>

@@ -12724,6 +12724,12 @@ function myFunction() {
   }
 }
 
+$(document).ready(function () {
+  $(".pills li").click(function () {
+    $(".vue").hide();
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/sass/app.scss":
