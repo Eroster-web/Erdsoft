@@ -293,7 +293,7 @@ li.move-right {
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   margin-inline: auto;
   text-transform: uppercase;
   border-bottom: 1px solid black;
@@ -1245,7 +1245,6 @@ li.move-right {
   .carousel {
     flex: 0 0 60%;
     margin-top: 10rem;
-    height: 60rem;
   }
 
   .carousel .controls {
@@ -1298,11 +1297,11 @@ li.move-right {
   .des {
     flex: 0 0 25%;
     margin-inline: auto;
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
 
   .des h2 {
-    font-size: 4.4rem;
+    font-size: 3.6rem;
   }
 
   .des p {
@@ -1355,7 +1354,7 @@ li.move-right {
     margin-inline: auto;
     margin-top: 10rem;
     width: 90%;
-    height: 50rem;
+    height: 0;
     overflow: hidden;
     position: relative;
   }
