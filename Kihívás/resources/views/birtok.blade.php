@@ -151,11 +151,11 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/betsek3.jpg') }}" alt="uragya2" class="slide">
-                                <img src="{{ asset('img/betsek2.jpg') }}" alt="uragya2" class="slide">
-                                <img src="{{ asset('img/betsek4.jpg') }}" alt="uragya3" class="slide">
-                                <img src="{{ asset('img/betsek5.jpg') }}" alt="uragya2" class="slide">
-                                <img src="{{ asset('img/betsek6.jpg') }}" alt="uragya2" class="slide">
+                                <img src="{{ asset('img/betsek3.jpg') }}" alt="betsek" class="slide">
+                                <img src="{{ asset('img/betsek2.jpg') }}" alt="betsek" class="slide">
+                                <img src="{{ asset('img/betsek4.jpg') }}" alt="betsek" class="slide">
+                                <img src="{{ asset('img/betsek5.jpg') }}" alt="betsek" class="slide">
+                                <img src="{{ asset('img/betsek6.jpg') }}" alt="betsek" class="slide">
                             </div>
                             <div class="controls">
                                 <div class="control prev-slide"><img class="back"
@@ -182,7 +182,16 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/holdvolgy02.jpg') }}" alt="uragya2" class="slide">
+                                <img src="{{ asset('img/holdvolgy02.jpg') }}" alt="holdvolgy" class="slide">
+                                <img src="{{ asset('img/holdvolgy01.jpg') }}" alt="holdvolgy" class="slide">
+                                <img src="{{ asset('img/holdvolgy03.jpg') }}" alt="holdvolgy" class="slide">
+                                <img src="{{ asset('img/holdvolgy04.jpg') }}" alt="holdvolgy" class="slide">
+                            </div>
+                            <div class="controls">
+                                <div class="control prev-slide"><img class="back"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+                                <div class="control next-slide"><img class="next"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
                             </div>
                         </div>
                         <div class="des">
@@ -208,7 +217,17 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/kiraly01.jpg') }}" alt="uragya2" class="slide">
+                                <img src="{{ asset('img/kiraly01.jpg') }}" alt="kiraly" class="slide">
+                                <img src="{{ asset('img/kiraly02.jpg') }}" alt="kiraly" class="slide">
+                                <img src="{{ asset('img/kiraly03.jpg') }}" alt="kiraly" class="slide">
+                                <img src="{{ asset('img/kiraly05.jpg') }}" alt="kiraly" class="slide">
+                                <img src="{{ asset('img/kiraly06.jpg') }}" alt="kiraly" class="slide">
+                            </div>
+                            <div class="controls">
+                                <div class="control prev-slide"><img class="back"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+                                <div class="control next-slide"><img class="next"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
                             </div>
                         </div>
                         <div class="des">
@@ -228,7 +247,21 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/bomboly01.jpg') }}" alt="uragya2" class="slide">
+                                <img src="{{ asset('img/bomboly01.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly02.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly03.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly04.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly05.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly06.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly07.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly08.jpg') }}" alt="bomboly" class="slide">
+                                <img src="{{ asset('img/bomboly09.jpg') }}" alt="bomboly" class="slide">
+                            </div>
+                            <div class="controls">
+                                <div class="control prev-slide"><img class="back"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+                                <div class="control next-slide"><img class="next"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
                             </div>
                         </div>
                         <div class="des">
@@ -250,7 +283,17 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/tamas04.jpg') }}" alt="uragya2" class="slide">
+                                <img src="{{ asset('img/tamas04.jpg') }}" alt="Szent-Tamas" class="slide">
+                                <img src="{{ asset('img/tamas01.jpg') }}" alt="Szent-Tamas" class="slide">
+                                <img src="{{ asset('img/tamas02.jpg') }}" alt="Szent-Tamas" class="slide">
+                                <img src="{{ asset('img/tamas03.jpg') }}" alt="Szent-Tamas" class="slide">
+                                <img src="{{ asset('img/tamas05.jpg') }}" alt="Szent-Tamas" class="slide">
+                            </div>
+                            <div class="controls">
+                                <div class="control prev-slide"><img class="back"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+                                <div class="control next-slide"><img class="next"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
                             </div>
                         </div>
                         <div class="des">
@@ -270,9 +313,18 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/veres01.jpg') }}" alt="uragya2" class="slide">
-
-
+                                <img src="{{ asset('img/veres01.jpg') }}" alt="veres" class="slide">
+                                <img src="{{ asset('img/veres02-1200x800.jpg') }}" alt="veres" class="slide">
+                                <img src="{{ asset('img/veres03.jpg') }}" alt="veres" class="slide">
+                                <img src="{{ asset('img/veres04.jpg') }}" alt="veres" class="slide">
+                                <img src="{{ asset('img/veres05.jpg') }}" alt="veres" class="slide">
+                                <img src="{{ asset('img/veres06.jpg') }}" alt="veres" class="slide">
+                            </div>
+                            <div class="controls">
+                                <div class="control prev-slide"><img class="back"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+                                <div class="control next-slide"><img class="next"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
                             </div>
                         </div>
                         <div class="des">
@@ -292,7 +344,18 @@
                     <div class="vue">
                         <div class="carousel">
                             <div class="slides">
-                                <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya2" class="slide">
+                                <img src="{{ asset('img/uragya01.jpg') }}" alt="uragya" class="slide">
+                                <img src="{{ asset('img/uragya02.jpg') }}" alt="uragya" class="slide">
+                                <img src="{{ asset('img/uragya03.jpg') }}" alt="uragya" class="slide">
+                                <img src="{{ asset('img/uragya04.jpg') }}" alt="uragya" class="slide">
+                                <img src="{{ asset('img/uragya05.jpg') }}" alt="uragya" class="slide">
+                                <img src="{{ asset('img/uragya06.jpg') }}" alt="uragya" class="slide">
+                            </div>
+                            <div class="controls">
+                                <div class="control prev-slide"><img class="back"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
+                                <div class="control next-slide"><img class="next"
+                                        src="{{ asset('img/readmore-arrow-white.png') }}"></div>
                             </div>
                         </div>
                         <div class="des">
@@ -311,9 +374,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
     </section>
     <!--View js vége-->
